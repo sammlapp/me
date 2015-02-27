@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sam Lapp</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+        <link rel="stylesheet" href="css/style1.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  
+
+<div class="row">
+    <div class="small-12 columns red">
+        <h2>This is a sidebar</h2>
+        <div class="row">
+            <div class="small-1 columns">
+                <h6>#1</h6>
+            </div>
+            <div class="small-9 columns">
+                <p>A post title</p>
+            </div>
+            <div class="small-2 columns">
+                <button>Go</button>
+            </div>
+        </div>
+    </div>
+    <div class="small-8 columns">
+        <h2>This is the content area</h2>
+    </div>
+</div>
+
+</html>
