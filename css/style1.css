@@ -8,6 +8,14 @@ background-color: #333333;
 .light-gray {
 background-color: #DDDDDD;
 }
+
+.sticky {
+    background-color: #FFFFFF;
+    border-bottom-color: #333333;
+    border-bottom: solid;
+    border-bottom-width: thin;
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;
@@ -52,4 +60,23 @@ background-color: #DDDDDD;
 
 h3 {
     color: inherit;
+}
+
+#resume {
+    background-color: #333333;
+    color: #FFFFFF;
+    border-radius: 5;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 15px;
+    height: 40px;
+    
+}
+
+
+.button.radius {
+    background-color: #220000;
+    padding-left:20px;
+    padding-right:20px;
+    margin-right: 5px;
 }
