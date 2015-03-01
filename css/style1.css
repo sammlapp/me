@@ -10,10 +10,13 @@ background-color: #DDDDDD;
 }
 
 .sticky {
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.4);
     border-bottom-color: #333333;
     border-bottom: solid;
     border-bottom-width: thin;
+}
+.sticky:hover {
+    background-color: rgba(255,255,255,0.9);
 }
 
 .center {
@@ -29,7 +32,7 @@ background-color: #DDDDDD;
 }
 
 .top-bar {
-    background-color: rgba(255,255,255,0.8);
+    background-color: transparent;
 }
     .top-bar-section li:not(.has-form) a:not(.button) {
       background-color: transparent;
@@ -80,8 +83,8 @@ h3 {
 
 .button.radius {
     background-color: #220000;
-    padding-left:20px;
-    padding-right:20px;
+    padding-left:10px;
+    padding-right:10px;
     margin-right: 5px;
 }
     .button.radius:hover {
