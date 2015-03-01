@@ -10,15 +10,16 @@ background-color: #DDDDDD;
 }
 
 .sticky {
-    background-color: #FFFFFF;
+    background-color: rgba(255,255,255,0.5);
     border-bottom-color: #333333;
     border-bottom: solid;
     border-bottom-width: thin;
 }
 
 .center {
+    display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
 
 #title {
@@ -28,10 +29,10 @@ background-color: #DDDDDD;
 }
 
 .top-bar {
-    background-color: white;
+    background-color: rgba(255,255,255,0.8);
 }
     .top-bar-section li:not(.has-form) a:not(.button) {
-      background-color: white;
+      background-color: transparent;
       color: #333333;
     }
 
@@ -39,6 +40,9 @@ background-color: #DDDDDD;
         color: #999999;
     }
     .top-bar.expanded .title-area {
+       background-color: transparent; 
+    }
+    .top-bar-section ul li {
        background-color: transparent; 
     }
     .top-bar.expanded .top-bar-section ul li > a {
@@ -80,3 +84,15 @@ h3 {
     padding-right:20px;
     margin-right: 5px;
 }
+    .button.radius:hover {
+    background-color: #EEEEEE;
+    color: #333333;
+    padding-left:20px;
+    padding-right:20px;
+    margin-right: 5px;
+    }
+
+p {
+    font-weight:200;
+}
+
