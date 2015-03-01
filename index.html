@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/style1.css">
 
-  <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/modernizr.js"></script>
+
 
 </head>
 <body>
@@ -79,13 +80,36 @@ document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" +
         Oh, and that's my keyboard<br><br></p>
     </div>
     
-    
-    <div class="small-12 columns dark"><a name="Code"></a> 
-        <h3>Some Code Dude...</h3>   
-        <p>put some projects here <br><br><br><br><br><br><br><br></p>
-            </div>
+<!--    Tabbed Code samples-->
+<div class="small-12 columns dark"><a name="Code" class="anchor"></a> 
+<h3 id="horizontal-tabs">I write code!</h3>
+<div>
+<ul class="tabs contained" data-tab>
+  <li class="tab-title active" style="margin-left: 40px"><a href="#js">Tab 1</a></li>
+  <li class="tab-title"><a href="#panelb">Tab 2</a></li>
+  <li class="tab-title"><a href="#panelc">Tab 3</a></li>
+  <li class="tab-title"><a href="#paneld">Tab 4</a></li>
+</ul>
+<div class="tabs-content contained">
+  <div class="content active" id="js">
+      <h4><a href="http://www.khanacademy.org/computer-programming/visualizing-sound-waves/5073049287393280">Visualizing Sound Waves (Code here)</a></h2> <script src="http://www.khanacademy.org/computer-programming/visualizing-sound-waves/5073049287393280/embed.js?editor=no&amp;buttons=no&amp;author=yes&amp;embed=yes"></script> <p><br></p>
+  </div>
+  <div class="content" id="panelb">
+    <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+  </div>
+  <div class="content" id="panelc">
+    <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+  </div>
+  <div class="content" id="paneld">
+    <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+  </div>
+</div>
+    </div>        
+        
+        
+    </div>
 
-    <div class="small-12 columns"><a name="project"></a>
+    <div class="small-12 columns"><a name="project" class="anchor"></a>
          <h3>The LightMood Design Project</h3>
          <p>Treating seasonal effective disorder with smarthome lighting</p>
         <a href="http://lightmood.weebly.com/"><img src="images/lightmood.png" alt="LightMood project" class="center"></a>
@@ -98,7 +122,7 @@ The project won "Most Innovative Design" at the 2014 Penn State Engineering Desi
     
 <!-- Contact -->
 <div class="small-12 columns gray">
-<div class="row"  style="float:left;"><a name="contact"></a>
+<div class="row"  style="float:left;"><a name="contact" class="anchor"></a>
         <div class="large-4 columns">
         <h3 id="contact">Contact Me!</h3>
          <p>412 608 2128 <br>

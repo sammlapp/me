@@ -90,12 +90,44 @@ h3 {
     .button.radius:hover {
     background-color: #EEEEEE;
     color: #333333;
-    padding-left:20px;
-    padding-right:20px;
-    margin-right: 5px;
     }
 
-p {
+p,h1,h2,h3 {
     font-weight:200;
 }
 
+/*scroll to 20px above element, so that not under top bar*/
+.anchor{
+    display: block; 
+    position: relative; 
+    top: -45px; 
+    visibility: hidden;
+}
+
+/*tab formatting */
+li.tab-title {
+        background-color: transparent;
+        color: #EEEEEE;
+        height:40px;
+    }
+    .tabs dd > a, .tabs .tab-title > a {
+        background-color: transparent;
+        color: #EEEEEE;
+        height:40px;
+    }
+    li.tab-title.active {
+        background-color: #EEEEEE;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height:40px;
+    }
+    .tabs dd > a, .tabs .tab-title.active > a {
+        background-color: transparent;
+        height:40px;
+    }
+
+div.tabs-content.contained {
+    background-color: #EEEEEE;
+    border-radius: 5px;
+
+}
