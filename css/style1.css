@@ -8,21 +8,24 @@ background-color: #333333;
 .light-gray {
 background-color: #DDDDDD;
 }
+.dark-text {
+color: #222;
+}
 
 .sticky {
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,.9);
     border-bottom-color: #333333;
     border-bottom: solid;
     border-bottom-width: thin;
 }
 .sticky:hover {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,.9);
 }
 
 .center {
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 #title {
@@ -96,7 +99,7 @@ p,h1,h2,h3 {
     font-weight:200;
 }
 
-/*scroll to 20px above element, so that not under top bar*/
+/*scroll to 45px above element, so that not under top bar*/
 .anchor{
     display: block; 
     position: relative; 
@@ -105,10 +108,17 @@ p,h1,h2,h3 {
 }
 
 /*tab formatting */
+.tabs dd > a:hover, .tabs .tab-title > a:hover {
+        background-color: #EEEEEE;
+        color: #222;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+}
 li.tab-title {
         background-color: transparent;
         color: #EEEEEE;
         height:40px;
+       
     }
     .tabs dd > a, .tabs .tab-title > a {
         background-color: transparent;
@@ -130,4 +140,16 @@ div.tabs-content.contained {
     background-color: #EEEEEE;
     border-radius: 5px;
 
+}
+
+
+/*downward arrow*/
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	
+	border-top: 20px solid #E8E8E8;
+    
 }
