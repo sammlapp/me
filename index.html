@@ -2,6 +2,11 @@
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en" >
     
+<!--load js -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation/foundation.js"></script>
+<script src="js/foundation/foundation.clearing.js"></script>
+    
 <!-- load google fonts -->
 <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
@@ -12,7 +17,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sam Lapp</title>
 
-  <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/style1.css">
@@ -80,9 +84,11 @@ document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" +
         Crash against the Sands of knowledge<br>
         Is the chaos of my mind<br><br></p>
     </div>
+    
         <!-- Image: me --> 
     <div class="small-12 large-8 columns large-centered">
-     <img src="images/sam3.png" alt="Keyboard" class="center" style="width:50%"><br>
+
+        <img src="images/sam3.png" onmouseover="this.src='images/samRain.png'" onmouseout="this.src='images/sam3.png'" alt="Me" class="center" style="width:50%"><br>
     </div>
     <div class="small-12 large-10 large-centered columns">
         
@@ -91,33 +97,72 @@ document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" +
         </h3>
         <p>
         <!-- bio-->
-        Hey. Welcome to my first self-coded website. I'll be gradually adding more stuff when the ocasion arises. Right now, I'm in Bangalore, Inida working for Wipro Ltd as a summer intern. Wipro is the biggest India-based tech/engineering company. Ironically, internet access here on campus is far from reliable. Then again, I'm not in Happy Valley anymore...
-<a href="#map"><br>(all the places I've been)</a>
-            <br><br></p>
+        Hey. Welcome to my first from-scratch website. I'm using foundation. I'll be gradually adding more stuff when the ocasion arises. I'm currently a Junior at Penn State University studying Engineering Science. This past summer I interned with Wipro Technologies in Bangalore, India and in the Spring I'm studying abroad in San Sebastian, Spain. Besides travelling, I enjoy running, playing piano, and a challenging math, engineering or coding problem.
+        <br><br>
+        I'm currently looking for an internship in engineering or design for Spring 2015.
+<a href="#map"><br>(map of places I've been)</a>
+        <br><br></p>
+        
     </div>
     
 <!-- WIPRO INTERNSHIP -->
-<div class="small-12 columns dark"><a name="Wipro" class="anchor"></a> 
-    <h3>
-    Internet of Things Internship
-    </h3>
-    <p class="subtitle">
-    Wipro Technologies (Bangalore, India)
-    </p>
-    <p class="light-text">
-    I worked as an intern at Wipro Technologies in Bangalore, India for the summer of 2015. I was assigned a challenging and awesome project with a co-worker Monil Sarkar. The task was to design and develop a flexible data parser, so that information and messages from a wide variety of devices could be integrated into a database or system. 
-    <p class="light-text">
-    As more and more devices become 'connected' with the Internet of Things, one of the major challenges is being able to interpret and integrate the information from all types of devices in a cohesive way. It is easy to write a parser to take data from one device, in a predetermined format, and extract the important information. It is much more difficult to interpret messages from any device, in any format, sending any number of parameters or type of information. 
-    <p class="light-text">
-    Because my work from the summer belongs to Wipro, I cannot share my code or detailed schematics of the parser I developed. I will say that it was a very flexible and dynamic tool that could parse data in a variety of formats (binary, hex, decimal, text...) given any list of parameters to extract. The performance was fast and efficient, so that the tool could simultaneously parse 1000 devices' messages each sending 1000 parameters every second. 
-    <p class="light-text">
-    Working on this project, I learned a ton of programming skills and a useful basis in business, team-based code projects, object oriented design and marketing. The code I wrote for the parser was predominantly Java, but I also wrote a sweet GUI in C# and database integration in mySQL.
-    </p>
+<div class="small-12 large-12 columns dark">
+    <div class="small-12 large-7 columns dark"><a name="Wipro" class="anchor"></a> 
+        <h3>
+        Internet of Things Internship
+        </h3>
+        <p class="subtitle">
+        Wipro Technologies (Bangalore, India)
+        </p>
+        <p class="light-text">
+        I worked as an intern at Wipro Technologies in Bangalore, India for the summer of 2015. I was assigned a challenging and awesome project with a co-worker Monil Sarkar. The task was to design and develop a flexible data parser, so that information and messages from a wide variety of devices could be integrated into a database or system. 
+        <p class="light-text">
+        As more and more devices become 'connected' with the Internet of Things, one of the major challenges is being able to interpret and integrate the information from all types of devices in a cohesive way. It is easy to write a parser to take data from one device, in a predetermined format, and extract the important information. It is much more difficult to interpret messages from any device, in any format, sending any number of parameters or type of information. 
+        <p class="light-text">
+        Because my work from the summer belongs to Wipro, I cannot share my code or detailed schematics of the parser I developed. I will say that it was a very flexible and dynamic tool that could parse data in a variety of formats (binary, hex, decimal, text...) given any list of parameters to extract. The performance was fast and efficient, so that the tool could simultaneously parse 1000 devices' messages each sending 1000 parameters every second. 
+
+        </p>
+    </div>
+    
+    <div class="small-12 large-5 columns dark" style="vertical-align:middle">
+        <br>
+        <img src="images/wipro.png" alt="Wipro" class="center" style="width:90%"><br>
+    </div>
+    <div class="small-12 columns dark">
+        <p class="light-text">
+        Working on this project, I learned a ton of programming skills and a useful basis in business, team-based code projects, object oriented design and marketing. The code I wrote for the parser was predominantly Java, but I also wrote a sweet GUI in C# and database integration in mySQL.
+        </p>
+    </div>
+</div>
+    
+<!--Break Time -->
+    <div class="small-12 columns light"><a name="Break Time" class="anchor"></a> 
+        <h3>Break Time</h3>
+        <p class="subtitle">
+            Phew, that was kinda boring. Does Sam do anything other than sit at a computer and nerd-out?        
+        </p>
+        
+        <!-- photo gallery -->
+        <ul class="clearing-thumbs" data-clearing>
+            <li><a class="th" href="images/samPiano.jpg"><img src="images/samPianoT.jpg"></a></li>
+            <li><a class="th" href="images/samRunning.jpg"><img src="images/samRunningT.jpg"></a></li>
+            <li><a class="th" href="images/samSaltFlats.jpg"><img src="images/samSaltFlatsT.jpg"></a></li>
+            <li><a class="th" href="images/samTrekking.jpg"><img src="images/samTrekkingT.jpg"></a></li>
+            <li><a class="th" href="images/samWaterfall.jpg"><img src="images/samWaterfallT.jpg"></a></li>
+        </ul>
+        
+        <br>
+        <p>
+        (yep!)
+        </p>
     </div>
     
 <!--   My Code: TABBED sections--><!--   My Code: TABBED sections-->
 <div class="small-12 columns dark"><a name="Code" class="anchor"></a> 
 <h3 id="horizontal-tabs">My Code!</h3>
+    <p class="subtitle">
+    So I can't show you my summer's worth of code from Wipro, but here is some other pretty cool stuff.
+    </p>
 <div>    
 <ul class="tabs contained show-for-medium-up " data-tab>
     
@@ -127,12 +172,17 @@ document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" +
 <!--    JS Processing-->
   <li class="tab-title" ><a href="#js">JS Processing</a></li>
     
+<!--    MATLAB -->
+  <li class="tab-title"><a href="#panele">MatLab</a></li>
+    
+    
 <!--    C++-->
   <li class="tab-title"><a href="#panelc">C++</a></li>
     
 <!--    HTML and CSS -->
   <li class="tab-title"><a href="#paneld">HTML and CSS</a></li>
     
+
 </ul>
 
 <!-- TAB Content --><!-- TAB Content --><!-- TAB Content -->
@@ -161,6 +211,25 @@ document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" +
       </div>
   </div>
     
+<!--MatLab--><!--MatLab--><!--MatLab--><!--MatLab-->
+<div class="content" id="panele">
+    <div class="small-10 large-10 large-centered small-centered columns radius dark-text">
+        <h4><a>Computational Methods in MatLab</a></h4>
+        <p>In Fall 2015 I took a class on compuational methods, where I learned to use the methods for numberical analysis by hand and implement them in code. During the semester I wrote MatLab functions to perform various root-finding techniques, Newton and Lagrange interpolating polynomials, regression models, Newton-Cotes numerical integration and differentiation, Euler and Runge-Kutta methods for ordinary differential equations, finite difference methods for partial differential equations and finite element analysis. 
+        </p>
+        
+            <img src="images/euler.png" alt="Converging ODE Phase Plane in MatLab" width="49%">
+            <img src="images/huens.png" alt="Converging ODE Solution in MatLab" width="49%">
+            <p>Numerical solutions to a system of ordinary differential equations. 
+                <br>   Left: Euler's method showing the phase plane convergence to a steady state
+                <br>   Right: Huen's method showing the time-domain convergence to a steady state 
+            </p>
+            
+        <h4><a>OPEN Design Lab</a></h4>
+        <p>I am working on a research project with Professor Matt Parkinson in the Penn State OPEN design lab. I am writing a MatLab model to study how a car driver's blind spot is affected by their adjustment of the left-side mirror. The simulation has produced some pretty cool results, and is easy to use for different car models and populations. </p>
+    </div>
+</div>
+    
 
 <!--C++--><!--C++--><!--C++--><!--C++-->
   <div class="content" id="panelc">
@@ -177,6 +246,8 @@ document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" +
         <p>This website is my first project in HTML and CSS. You are looking at it! I'm using Foundation as a starting point. Feel free to peek at the html (ctrl/cmd + U, + alt for Chrome) and <a href="css/style1.css">my customized CSS</a>.</p>
     </div>
     </div>
+    
+    
 </div>
     
     </div> <!-- end tabs, begin accordion-->
@@ -218,6 +289,30 @@ document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" +
         </div>
       </div>
       
+      
+<!--MatLab--><!--MatLab--><!--MatLab--><!--MatLab-->
+    <a href="#panele" class="show-for-small-only">MatLab</a>
+    <div id="panele" class="content">
+      <div class="content-box selection-box">
+        <div class="small-10 large-10 large-centered small-centered columns radius dark-text">
+            <h4><a>Computational Methods in MatLab</a></h4>
+            <p>In Fall 2015 I took a class on compuational methods, where I learned to use the methods for numberical analysis by hand and implement them in code. During the semester I wrote MatLab functions to perform various root-finding techniques, Newton and Lagrange interpolating polynomials, regression models, Newton-Cotes numerical integration and differentiation, Euler and Runge-Kutta methods for ordinary differential equations, finite difference methods for partial differential equations and finite element analysis. 
+            </p>
+            
+                 
+            <img src="images/euler.png" alt="Converging ODE Phase Plane in MatLab" width="49%">
+            <img src="images/huens.png" alt="Converging ODE Solution in MatLab" width="49%">
+            <p>Numerical solutions to a system of ordinary differential equations. 
+                <br>   Left: Euler's method showing the phase plane convergence to a steady state
+                <br>   Right: Huen's method showing the time-domain convergence to a steady state 
+            </p>
+            
+            <h4><a>OPEN Design Lab</a></h4>
+            <p>I am working on a research project with Professor Matt Parkinson in the Penn State OPEN design lab. I am writing a MatLab model to study how a car driver's blind spot is affected by their adjustment of the left-side mirror. The simulation has produced some pretty cool results, and is easy to use for different car models and populations. </p>
+        </div>
+        </div>
+    </div>
+      
 <!--C++--><!--C++--><!--C++--><!--C++-->
       <a href="#panelc" class="show-for-small-only">C++</a>
     <div id="panelc" class="content">
@@ -239,8 +334,10 @@ document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" +
                 </div>
             </div>
         </div>
+
     
     </dd>
+    
     <div><p></p></div>
     </div> <!-- end tabbed section -->
     
@@ -331,19 +428,32 @@ var hostname = "gmail.com";
 var linktext = username + "@" + hostname ;
 document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
 </script>
-             
-    </div>
     
-    <!--Image links to my sites -->
-    <div class="small-12 large-8 columns">
-    <p style="float:left;" align="right"><br>Feel free to contact me with questions, comments and feedback!<br></p></div>
-     <div class="large-4 small-12 columns" style="min-width:120px">
+            <div>
+            <!--Image links to my sites -->
+                <p></p>
         <a href="http://samlapp.bandcamp.com/"><img src="images/Bandcamp.png" alt="Bandcamp" style="height:40px; padding-right:10px" align="left"></a>
          
         <a href="www.linkedin.com/in/samlapp"><img src="images/linkedin.png" alt="Linkedin" style="height:40px; padding-right:10px" align="left"></a>
          
         <a href="https://psu.box.com/s/wfplchlnnvli12flif769621ru9825qp"><img src="images/box.png" alt="Box" style="height:40px; padding-right:10px" align="left"></a>
          <p><br><br></p>
+            </div>
+             
+    </div>
+    
+    <div class="small-12 large-8 columns">
+    <p>
+        <br>
+        Feel free to contact me with questions, comments and feedback!
+        <p>
+        I am currently looking for an internship in engineering or design for Summer 2016. If you like my work please get in touch! 
+        </p></div>
+     <div class="large-4 small-12 columns" style="min-width:120px">
+
+         
+         
+         
 
     </div>
         
