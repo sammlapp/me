@@ -11,15 +11,18 @@ background-color: #DDDDDD;
 .dark-text {
 color: #222;
 }
+.light-text{
+    color: #DDDDDD;
+}
 
 .sticky {
-    background-color: rgba(255,255,255,.9);
+    background-color: rgba(255,255,255,1);
     border-bottom-color: #333333;
     border-bottom: solid;
     border-bottom-width: thin;
 }
 .sticky:hover {
-    background-color: rgba(255,255,255,.9);
+    background-color: rgba(255,255,255,1);
 }
 
 .center {
@@ -70,6 +73,11 @@ color: #222;
 
 h3 {
     color: inherit;
+}
+
+.subtitle {
+    color: #AAAAAA;
+    font-size: 15;
 }
 
 #resume {
@@ -152,4 +160,9 @@ div.tabs-content.contained {
 	
 	border-top: 20px solid #E8E8E8;
     
+}
+
+.black{
+    background-color: #000000;
+    color: #666666;
 }
