@@ -1,0 +1,179 @@
+.red {
+background-color: red;
+}
+.gray {
+background-color: #333333;
+    color: white;
+}
+.light-gray {
+background-color: #DDDDDD;
+}
+.dark-text {
+color: #222;
+}
+.light-text{
+    color: #DDDDDD;
+}
+
+.sticky {
+    background-color: rgba(255,255,255,.95);
+    border-bottom-color: #333333;
+    border-bottom: solid;
+    border-bottom-width: thin;
+}
+.sticky:hover {
+    background-color: rgba(255,255,255,1);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.horizontalFrames{
+    height:200px; 
+    padding-left: 0%; 
+    padding-right: 0%; 
+}
+
+#title {
+    font-size: 30;
+    font-weight: 200;
+    color: #000000;
+}
+
+.top-bar {
+    background-color: transparent;
+}
+    .top-bar-section li:not(.has-form) a:not(.button) {
+      background-color: transparent;
+      color: #333333;
+    }
+
+    #menu {
+        color: #999999;
+    }
+    .top-bar.expanded .title-area {
+       background-color: transparent; 
+    }
+    .top-bar-section ul li {
+       background-color: transparent; 
+    }
+    .top-bar.expanded .top-bar-section ul li > a {
+        border: none;
+    }
+    
+#contact {
+    color:white;
+}
+
+.row.fw {
+  max-width: 100%;
+}
+
+.dark {
+    background-color: #333333;
+    color: white;
+}
+
+h3 {
+    color: inherit;
+}
+
+.subtitle {
+    color: #AAAAAA;
+    font-size: 15;
+}
+
+#resume {
+    background-color: #333333;
+    color: #FFFFFF;
+    border-radius: 5;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 15px;
+    height: 40px;
+    
+}
+
+
+.button.radius {
+    background-color: #220000;
+    padding-left:10px;
+    padding-right:10px;
+    margin-right: 5px;
+}
+    .button.radius:hover {
+    background-color: #EEEEEE;
+    color: #333333;
+    }
+
+p,h1,h2,h3 {
+    font-weight:200;
+}
+
+/*scroll to 45px above element, so that not under top bar*/
+.anchor{
+    display: block; 
+    position: relative; 
+    top: -45px; 
+    visibility: hidden;
+}
+
+/*tab formatting */
+.tabs dd > a:hover, .tabs .tab-title > a:hover {
+        background-color: #EEEEEE;
+        color: #222;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+}
+li.tab-title {
+        background-color: transparent;
+        color: #EEEEEE;
+        height:40px;
+       
+    }
+    .tabs dd > a, .tabs .tab-title > a {
+        background-color: transparent;
+        color: #EEEEEE;
+        height:40px;
+    }
+    li.tab-title.active {
+        background-color: #EEEEEE;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height:40px;
+    }
+    .tabs dd > a, .tabs .tab-title.active > a {
+        background-color: transparent;
+        height:40px;
+    }
+
+div.tabs-content.contained {
+    background-color: #EEEEEE;
+    border-radius: 5px;
+
+}
+
+
+/*downward arrow*/
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	
+	border-top: 20px solid #E8E8E8;
+    
+}
+
+.black{
+    background-color: #000000;
+    color: #999999;
+}
+
+/* thumbnail picture style */
+.th{
+
+}
