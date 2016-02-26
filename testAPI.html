@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <title>Info windows</title>
     <style>
       html, body {
         height: 100%;
@@ -16,17 +16,94 @@
     </style>
   </head>
   <body>
-    <div id="map"></div>
+      <div style="height:10%"><p id="text"></p></div>
+    <div id="map" style="height:90%"></div>
     <script>
-      var map;
+    
+    var geocoder = new google.maps.Geocoder();
+
+        // When the user clicks the marker, an info window opens.
+
       function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
+        
+        //var newPlace= geocodeAddress(geocoder,"Pittsburgh");//pittsburgh;        
+
+        var pit = {lat: 40.4397, lng: -79.9764};//14.1000° N, 87.2167° W
+        var tegucigalpa = {lat: 14.1000, lng: -87.2167}; //14.1000° N, 87.2167
+          var costa = {lat: 9.9333, lng: -84.0833};
+
+        
+//        var ecuador = {lat: 40.4397, lng: -79.9764};//4.0692° S, 78.9567° W
+
+//        var bolovia = {lat: 40.4397, lng: -79.9764};
+//        var manaus = {lat: 40.4397, lng: -79.9764};
+//        var recife = {lat: 40.4397, lng: -79.9764};
+//        var sanse = {lat: 40.4397, lng: -79.9764};
+//        var hendaye = {lat: 40.4397, lng: -79.9764};
+//        var cairo = {lat: 40.4397, lng: -79.9764};
+//        var ramallah = {lat: 40.4397, lng: -79.9764};
+//        var istanbul = {lat: 40.4397, lng: -79.9764};
+//        var bangalore = {lat: 40.4397, lng: -79.9764};
+//        var kashmir = {lat: 40.4397, lng: -79.9764};
+//        var bangkok = {lat: 40.4397, lng: -79.9764};
+//        var kohtao = {lat: 40.4397, lng: -79.9764};
+//        var singapore = {lat: 40.4397, lng: -79.9764};
+//        var kl = {lat: 40.4397, lng: -79.9764};
+          
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: {lat: 40.4397, lng: -79.9764}
+        });
+
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+            'sandstone rock formation in the southern part of the '+
+            'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+            'south west of the nearest large town, Alice Springs; 450&#160;km '+
+            '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+            'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+            'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+            'Aboriginal people of the area. It has many springs, waterholes, '+
+            'rock caves and ancient paintings. Uluru is listed as a World '+
+            'Heritage Site.</p>'+
+            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+            '(last visited June 22, 2009).</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+          position: pit,
+          map: map,
+          title: 'Pittsburgh'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
         });
       }
+        
+function geocodeAddress(geocoder, location) {
+        geocoder.geocode({'address': location}, function(results, status) {
+          if (status === google.maps.GeocoderStatus.OK) {
+               return results[0].geometry.location;
+          }else{
+              return {lat:-45, lng: -45};
+          }
+        });
+}
+        
+        
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyal8VFp5ATtC3wJSnbQ5lg9XFu5ylg1k&callback=initMap"
-    async defer></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyal8VFp5ATtC3wJSnbQ5lg9XFu5ylg1k&signed_in=true&callback=initMap">
+    </script>
   </body>
 </html>
