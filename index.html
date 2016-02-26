@@ -376,12 +376,42 @@ The project won "Most Innovative Design" at the 2014 Penn State Engineering Desi
     
         
     <!-- MAP --><!-- MAP --><!-- MAP -->
-
 <div class="small-12 columns black"><a name="map" class="anchor"></a> 
     <h3 style="color: #EEEEEE">Map</h3>
     <p class="black">This is a map of the most exciting places I've been, and the places I'm hoping to travel to soon</p>
-    <img src="images/map.png" alt="world map" style=" width: 80%" class="center">
-    </div>
+    
+
+    
+    
+    
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyal8VFp5ATtC3wJSnbQ5lg9XFu5ylg1k&callback=initMap"
+    async defer></script>
+    
+    
+    
+    
+    
+    
+    
+    <div style="position:relative;">
+
+<img src="images/map.png" alt="world map" style=" width: 80%" class="center">
+
+
+<div style="position:absolute; width:3%;  height:5%; top:30%; left:32%;" id="Honduras">
+  </div>
+
+</div>
     
 <div class="small-12 columns black">
 <ul class="accordion" data-accordion>
@@ -469,7 +499,7 @@ document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" +
         <a href="http://samlapp.bandcamp.com/" target="_blank"><img src="images/Bandcamp.png" alt="Bandcamp" style="height:40px; padding-right:10px" align="left"></a>
          
         <a href="www.linkedin.com/in/samlapp" target="_blank"><img src="images/linkedin.png" alt="Linkedin" style="height:40px; padding-right:10px" align="left"></a>
-         
+        
         <a href="https://psu.box.com/HelpingHand" target="_blank"><img src="images/box.png" alt="Box" style="height:40px; padding-right:10px" align="left"></a>
          <p><br><br></p>
             </div>
