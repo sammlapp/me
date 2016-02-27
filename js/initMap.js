@@ -223,12 +223,35 @@ function initMap() {
             '</div>';
         places[places.length]=kl;
     
+    
+        
+        var styles =[ {
+            "stylers": [{ "color": "#019494" }]
+            },
+            {
+            "featureType": "water",
+            "stylers": [{ "lightness": -100 }]
+            },
+            {
+            "elementType": "labels",
+            "stylers": [{ "visibility": "off" }]
+            }
+        ];
+        var styledMap = new google.maps.StyledMapType(styles,
+        {name: "Styled Map"});
+        
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 2,
-          center: {lat: 43.32, lng: -1.98}
+          center: {lat: 43.32, lng: -1.98},
+          scrollwheel: false,
+          mapTypeControlOptions: {
+            mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+          } 
+            
         });
 
-    
+        map.mapTypes.set('map_style', styledMap);
+        map.setMapTypeId('map_style'); 
     
     infowindow = new google.maps.InfoWindow();
 
