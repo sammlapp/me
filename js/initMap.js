@@ -168,7 +168,7 @@ function initMap() {
             '</div>'+
             '<h1 id="firstHeading" class="firstHeading">Bangalore, India</h1>'+
             '<div id="bodyContent">'+
-            '<p>Internship with Wipro Technologies for the Summer of 2014.'+
+            '<p><a href="#Wipro">Internship with Wipro Technologies</a> for the Summer of 2014.'+
             '<p>(last visited July 2014).</p>'+
             '</div>'+
             '</div>';
