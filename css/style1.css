@@ -173,6 +173,21 @@ div.tabs-content.contained {
     color: #999999;
 }
 
+#map{
+  height:500px;
+  width:80%;
+  padding:20px;
+  margin: 0 auto 0 auto; 
+}
+
+#content{
+    color:black;
+    font-size=0.7em;
+}
+#content h1{
+    font-size:2em;
+}
+
 /* thumbnail picture style */
 .th{
 
