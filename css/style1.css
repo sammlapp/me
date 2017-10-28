@@ -32,9 +32,9 @@ color: #222;
 }
 
 .horizontalFrames{
-    height:200px; 
-    padding-left: 0%; 
-    padding-right: 0%; 
+    height:200px;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
 #title {
@@ -55,15 +55,15 @@ color: #222;
         color: #999999;
     }
     .top-bar.expanded .title-area {
-       background-color: transparent; 
+       background-color: transparent;
     }
     .top-bar-section ul li {
-       background-color: transparent; 
+       background-color: transparent;
     }
     .top-bar.expanded .top-bar-section ul li > a {
         border: none;
     }
-    
+
 #contact {
     color:white;
 }
@@ -94,7 +94,7 @@ h3 {
     padding-right: 3px;
     border-radius: 15px;
     height: 40px;
-    
+
 }
 
 
@@ -115,9 +115,9 @@ p,h1,h2,h3 {
 
 /*scroll to 45px above element, so that not under top bar*/
 .anchor{
-    display: block; 
-    position: relative; 
-    top: -45px; 
+    display: block;
+    position: relative;
+    top: -45px;
     visibility: hidden;
 }
 
@@ -132,7 +132,7 @@ li.tab-title {
         background-color: transparent;
         color: #EEEEEE;
         height:40px;
-       
+
     }
     .tabs dd > a, .tabs .tab-title > a {
         background-color: transparent;
@@ -159,13 +159,13 @@ div.tabs-content.contained {
 
 /*downward arrow*/
 .arrow-down {
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
-	
+
 	border-top: 20px solid #E8E8E8;
-    
+
 }
 
 .black{
@@ -173,11 +173,16 @@ div.tabs-content.contained {
     color: #999999;
 }
 
+.myLink{
+  color:#589393;
+  text-decoration:none;
+}
+
 #map{
   height:500px;
   width:80%;
   padding:20px;
-  margin: 0 auto 0 auto; 
+  margin: 0 auto 0 auto;
 }
 
 #content{
