@@ -1,2 +1,0 @@
-# me
-my personal website
