@@ -1,117 +1,336 @@
 <!DOCTYPE html>
 
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<html class="no-js" lang="en" >
-
-<!--load js -->
-<script src="js/vendor/jquery.js"></script>
-<script src="js/foundation/foundation.js"></script>
-<script src="js/foundation/foundation.clearing.js"></script>
-
-<!-- load google fonts -->
-<link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
-
-<link rel="stylesheet" href="css/style1.css">
-<link rel="shortcut icon" href="favicon.png" />
+<html lang="en" >
 
 
 <head>
-  <meta charset="utf-8">
-  <!-- If you delete this meta tag World War Z will become a reality -->
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- If you delete this meta tag World War Z will become a reality -->
+
+  <!-- load google fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
+
+  <!-- <link rel="stylesheet" href="./asset/css/style1.css"> -->
+  <link rel="shortcut icon" href="favicon.png" />
+  <link href="./asset/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./asset/css/style1.css" rel="stylesheet">
+
   <title>Sam Lapp</title>
-
-    <script src="js/vendor/modernizr.js"></script>
-
 
 </head>
 
-<body style="margin:0px; font-family:Raleway, Helvetica, Arial, sans-serif; background-color:#000">
+<body>
 
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Sam Lapp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolios">Portfolios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#music">Music</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resumes">Resumes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+
+      </ul>
+
+    </div>
+    </nav>
     <!-- Image: me -->
-    <div class="small-12 large-12 columns small-centered large-centered" style="backgound-color:black; color:#888">
-    <center>
+    <div class="container-fluid">
 
-    <br><br>
-    <b> SamLapp.com </b> <br><br>
+      <!-- <div class="mx-auto m-2 text-center">
+        <h5>SamLapp.com</h5>
+      </div> -->
 
-<!-- <br><br><b> -->
-		<!-- Live Stream -->
-    <!-- listen to past sessions <a class='myLink' href="https://mixlr.com/sammlapp/showreel/">here </a>
-    <iframe src="https://mixlr.com/users/7507226/embed?color=981414" width="100%" height="180px" scrolling="no" frameborder="no" marginheight="0" marginwidth="0"></iframe><small><a href="https://mixlr.com/sammlapp" style="color:#1a1a1a;text-align:left; font-family:Helvetica, sans-serif; font-size:11px;">sammlapp is on Mixlr</a></small> -->
+  <!-- <br><br><b> -->
+  		<!-- Live Stream -->
+      <!-- listen to past sessions <a class='myLink' href="https://mixlr.com/sammlapp/showreel/">here </a>
+      <iframe src="https://mixlr.com/users/7507226/embed?color=981414" width="100%" height="180px" scrolling="no" frameborder="no" marginheight="0" marginwidth="0"></iframe><small><a href="https://mixlr.com/sammlapp" style="color:#1a1a1a;text-align:left; font-family:Helvetica, sans-serif; font-size:11px;">sammlapp is on Mixlr</a></small> -->
 
-    <!-- <img src="images/sam_piano.jpg" alt="photo by Christina Platt" style="width:70%"><br><br> -->
-    <!-- <div style="color:#BBBBBB; padding:10px; align:center">Life is blurry if you look too far ahead.</div> -->
+      <!-- <img src="images/sam_piano.jpg" alt="photo by Christina Platt" style="width:70%"><br><br> -->
+      <!-- <div style="color:#BBBBBB; padding:10px; align:center">Life is blurry if you look too far ahead.</div> -->
 
-<!--     <br><br>
- -->
+  <!--     <br><br>
+   -->
+      <div class="row m-2"></div>
 
-    <div style="padding-left:30%; padding-right:30%; text-align:center">
-    Hi. My name is Sam Lapp.
-    <br><br>
-		My life is built around design, nature, music, and community.
-		<br><br>
+      <div class="row m-3">
+        <div class="col-12 col-lg-1"></div>
+        <div class="col-12 col-lg-3">
+             <div class="card mx-auto col-sm-8 col-md-6 col-lg-12">
+               <img src="./asset/img/headshot.jpg" class="m-2 card-img-top img-rounded" alt="...">
+               <!-- <div class="card-body">
+                 <h5 class="card-title">Card title</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn btn-primary">Go somewhere</a>
+               </div> -->
+               <div class="p-2">
+               <h5>Sam Lapp</h5>
+               <p>Conservation researcher<br>
+               <a class="myLink" href="https://www.kitzeslab.org/"> University of Pittsburgh</a> </p>
+                 <script language="JavaScript">
+                   var username = "sammlapp";
+                   var hostname = "gmail.com";
+                   var linktext = username + "@" + hostname ;
+                   document.write("<a class='myLink'" + " href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
+                 </script>
 
-    I spend my days with the <a class='myLink' href="https://kitzeslab.org">Kitzes Lab</a> building open-source tools for automated birdsong recognition. Outside of work, I spend my time making music, running, and building community.
-    <br><br><br>
+             </div>
+             </div>
+            </div>
+        <div class="col-12 col-lg-6">
+           <div class="m-2">
+             <h5>Biography</h5>
+             Hi. My name is Sam Lapp.
+             <br><br>
+             My life is built around design, nature, music, and community.
+             <br><br>
 
-  </div>
+             Currently, I'm focused on two major goals:
+             <ul>
+               <li>Using bioacoustics and machine learning to understand and mitigate global biodiversity loss
+               <li>Building community in a time of disconnection through shared musical experiences
+             </ul>
+             I spend my days with the <a class='myLink' href="https://kitzeslab.org">Kitzes Lab</a>
+             building open-source tools for automated birdsong recognition.
+             Outside of work, I spend my time making music, running,
+             and building community.
+             <br>
+           </div>
+         </div>
+      </div>
 
-   <div style="padding-left:20%; padding-right:20%; text-align:left">
-    Portfolios:
-    <br><a class='myLink' style='padding-left:10px;' target="_blank" href="https://drive.google.com/open?id=1TWVSx1dUC-XKPGuqe0_gAQnood6-fzQ2">Graduate Design Portfolio (2017-2019)</a>
-    <br><a class='myLink' style='padding-left:10px;' target="_blank" href="https://drive.google.com/open?id=19PkmoD2XKNaa34jJrJIVDyMhz36NGYNi">Undergraduate Design Portfolio (2013-2017)</a>
-
-    <br><br>Project Websites:
-    <br><a class='myLink' style='padding-left:10px;' target="_blank" href="https://playdarwin.com">Darwin: a card game about evolution</a>
-    <br><a class='myLink' style='padding-left:10px;' target="_blank" href="https://www.sunaansuna.com/">Suna Ansuna: Merging music and conservation</a>
-    <br><a class='myLink' style='padding-left:10px;' target="_blank" href="https://grooveroom.weebly.com/">The Groove Room: One-day music creation hacks</a>
-    <br><a class='myLink' style='padding-left:10px;' target="_blank" href="https://www.dopplerpoppins.com/">Doppler Poppins: Funk and jam band</a>
-
-    <br><br>Reports, Theses, and Publications:
-    <br><a class='myLink' style='padding-left:10px;' target="_blank" href="https://f1000research.com/posters/9-964">Poster: Detecting periodic vocalizations of frogs in audio recordings</a>
-    <br>
-    <!-- <a class='myLink' style='padding-left:10px;' target="_blank" href="./summer_music_blog.html">music gallery</a> -->
-    <br><a class='myLink' style='padding-left:10px;' target="_blank"  href="https://thesiscommons.org/cdsyr/">Masters thesis: an agent based model of cognitive style and teamwork</a>
-    <br><a class='myLink' style='padding-left:10px;' target="_blank"  href="https://honors.libraries.psu.edu/catalog/4532sol5484">Undergraduate thesis: intonation in non-western music</a>
-    <br>
-    <br><a class='myLink' style='padding-left:10px;' target="_blank"  href="https://engrxiv.org/s4b68/">KABOOM: an agent-based model of cognitive style</a>
-    <br><a class='myLink' style='padding-left:10px;' target="_blank"  href="https://engrxiv.org/pfys6/">Leveraging diversity of cognitive style in teams</a>
-    <br><a class='myLink' style='padding-left:10px;' target="_blank"  href="https://www.tandfonline.com/doi/abs/10.1080/00140139.2018.1550209">Modeling passenger accomodation in airplanes</a>
-    <!-- <br><a class='myLink' style='padding-left:10px;' target="_blank"  href="">Technical Report</a> -->
-
-
-    <br><br>Resumes:
-    <br><a class='myLink' style='padding-left:10px;' target="_blank"  href="https://drive.google.com/open?id=1fAj_jlpD4Vb7wtp-bQvtwTSVDhL3iezS">Professional resume</a>
-    <br><a class='myLink' style='padding-left:10px;' target="_blank"  href="https://drive.google.com/open?id=1qEss_PIptnXirPbn03HEhBA8ZUYqa5_D">Music resume</a>
-    <br><a class='myLink' style='padding-left:10px;' target="_blank"  href="https://drive.google.com/open?id=1lpf7ACDHRTWSOf43hefrsCAdq08eiixS">Running resume</a>
-    <br><a class='myLink' style='padding-left:10px;' target="_blank"  href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F6FQ-DixRd-3NP76PIUyaw10rzrfvq5vf2nGg5r6syYUzmPcB7uGaecUayighCxvsNFiVxqi9OfJQLxsSvFkAUGcVV5_NMusMxGQ5-39UF7DbgUEWQ&user=X5ubHcoAAAAJ
-">Google Scholar profile</a>
-
-
-    <br><br>Music:
-    <br><a class='myLink' style='padding-left:10px;' target="_blank"  href="https://open.spotify.com/track/5xOwerunXNjvWV0ezmIafY?autoplay=true&v=T">Studio album: Turned on Neurons</a>
-    <br><a class='myLink' style='padding-left:10px;' target="_blank"  href="https://www.youtube.com/watch?v=yqsPrylh0ec">Classical piano: Chopin's Ballade No. 1</a>
-    <br><a class='myLink' style='padding-left:10px;' target="_blank"  href="https://grooveroom.bandcamp.com/album/aiden">Groove Room: One-day write and record workshop</a>
-
-
-    <br><br> Want to chat? Please, get in touch! <br>
-      <script language="JavaScript">
-  var username = "sammlapp";
-  var hostname = "gmail.com";
-  var linktext = username + "@" + hostname ;
-  document.write("<a class='myLink' style='padding-left:10px;'" + " href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
-      </script>
-      <br><br>
+      <div class="row m-3">
+        <div class = "col-12 col-lg-1"></div>
+        <div class="col12 col-lg-11">
 
 
-      <div style='text-align:center'> <br><br> samlapp.com <br><br></div>
+        <a class="anchor" id="portfolios"></a>
+        <h5 class="m-3">Portfolios</h5>
 
+        <div class="row col-md-12">
+          <div class="card col-md-5 col-lg-3 m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column d-flex flex-column">
+              <h5 class="card-title">Github</h5>
+              <p class="card-text">Code from personal projects and the Kitzes Lab</p>
+              <a href="http://github.com/sammlapp" class="btn btn-primary mt-auto">View</a>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Google Scholar</h5>
+              <p class="card-text">Publications and scientific contributions</p>
+              <a href="https://scholar.google.com/citations?user=X5ubHcoAAAAJ&hl=en" class="btn btn-primary mt-auto">View</a>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Graduate design portfolio</h5>
+              <p class="card-text">Projects from MS in Engineering Design at Penn State</p>
+              <a href="https://drive.google.com/open?id=1TWVSx1dUC-XKPGuqe0_gAQnood6-fzQ2" class="btn btn-primary mt-auto">View</a>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Undergrad design portfolio</h5>
+              <p class="card-text">Even further back into my engineering design education</p>
+              <a href="https://drive.google.com/open?id=19PkmoD2XKNaa34jJrJIVDyMhz36NGYNi" class="btn btn-primary mt-auto">View</a>
+            </div>
+          </div>
+        </div>
+
+        <a class="anchor" id="publications"></a>
+        <h5 class="">Publications</h5>
+
+        <div class="row col-md-12">
+          <div class="card col-md-5 col-lg-3 m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">RIBBIT</h5>
+              <p class="card-text">Automated detection of frog vocalizations in audio recordings</p>
+              <a href="https://f1000research.com/posters/9-964" class="btn btn-primary mt-auto">Poster</a>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">KABOOM</h5>
+              <p class="card-text">An agent-based model of cognitive style and teamwork</p>
+              <div class="mt-auto">
+                <a href="https://thesiscommons.org/cdsyr/" class="btn btn-primary m-1">MS Thesis</a>
+                <a href="https://engrxiv.org/s4b68/" class="btn btn-primary m-1">Design Science article</a>
+                <a href="https://engrxiv.org/pfys6/" class="btn btn-primary m-1">IDETC conference paper</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Non-western music intonation</h5>
+              <p class="card-text">Undergraduate thesis quantitatively investigating musical intonation in non-western music</p>
+              <a href="https://honors.libraries.psu.edu/catalog/4532sol5484" class="btn btn-primary mt-auto">View</a>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Passenger accomodation</h5>
+              <p class="card-text">Modeling passenger accomodation in airline seating</p>
+              <a href="https://www.tandfonline.com/doi/abs/10.1080/00140139.2018.1550209" class="btn btn-primary mt-auto">View</a>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="anchor" id="projects"></a>
+        <h5 class="">Projects</h5>
+
+        <div class="row col-md-12">
+
+          <div class="card col-md-5 col-lg-3 m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">OpenSoundscape</h5>
+              <p class="card-text">Open-source python library for bioacoustics research</p>
+              <div class="mt-auto">
+                <a href="https://opensoundscape.org" class="btn btn-primary">Docs</a>
+                <a href="https://github.com/kitzeslab/opensoundscape" class="btn btn-primary">Code</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card col-md-5 col-lg-3 m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Darwin</h5>
+              <p class="card-text">A strategic and educational card game on evolution</p>
+              <a href="https://playdarwin.com" class="btn btn-primary mt-auto">Website</a>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3  m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Suna Ansuna</h5>
+              <p class="card-text">Merging music and conservation in Central PA</p>
+              <a href="http://www.sunaansuna.com/" class="btn btn-primary mt-auto">Website</a>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">The Groove Room</h5>
+              <p class="card-text">One-day community-oriented music writing hacks</p>
+              <div class="mt-auto">
+                <a href="https://grooveroom.weebly.com/" class="btn btn-primary">Website</a>
+                <a href="https://grooveroom.bandcamp.com/" class="btn btn-primary">Listen</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="anchor" id="music"></a>
+        <h5 class="m-3">Music</h5>
+
+        <div class="row col-md-12">
+
+          <div class="card col-md-5 col-lg-3 m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Turned On Neurons</h5>
+              <p class="card-text">Funky grooves from a home-made studio album by Doppler Poppins</p>
+              <a href="https://distrokid.com/hyperfollow/dopplerpoppins/turned-on-neurons-2?fbclid=IwAR1fPFoeT1JjVQwY97-5pfqJKtE1UA4DwuEzZM94vzLyFdWpsaGlwOH2wT8" class="btn btn-primary mt-auto">Listen</a>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3  m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Ballade No. 1</h5>
+              <p class="card-text">Chopin's piano masterpiece, performed and recorded by yours truly</p>
+              <a href="https://www.youtube.com/watch?v=yqsPrylh0ec" class="btn btn-primary mt-auto">Watch</a>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">aiDEN</h5>
+              <p class="card-text">A song contemplating artificial intelligence from the Groove Room</p>
+              <a href="https://grooveroom.bandcamp.com/album/aiden" class="btn btn-primary mt-auto">Listen</a>
+            </div>
+          </div>
+        </div>
+
+        <a class="anchor" id="resumes"></a>
+        <h5 class="m-3">Resumes</h5>
+
+        <div class="row col-md-12">
+          <div class="m-2" >
+              <a href="https://drive.google.com/open?id=1fAj_jlpD4Vb7wtp-bQvtwTSVDhL3iezS" class="btn btn-primary mt-auto">Professional CV</a>
+          </div>
+          <div class="m-2" >
+              <a href="https://drive.google.com/open?id=1qEss_PIptnXirPbn03HEhBA8ZUYqa5_D" class="btn btn-primary mt-auto">Music</a>
+          </div>
+          <div class="m-2" >
+              <a href="https://drive.google.com/open?id=1lpf7ACDHRTWSOf43hefrsCAdq08eiixS" class="btn btn-primary mt-auto">Running</a>
+          </div>
+        </div>
+
+        <a class="anchor" id="contact"></a>
+        <h5 class="m-3"> Contact </h5>
+
+        <div class="col-md-12 m-2"><script language="JavaScript">
+          var username = "sammlapp";
+          var hostname = "gmail.com";
+          var linktext = username + "@" + hostname ;
+          document.write("<a class='myLink'" + " href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
+              </script>
+        </div>
+
+      </div>
 
     </div>
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     </body>
 
