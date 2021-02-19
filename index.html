@@ -26,7 +26,10 @@
 <body>
 
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Sam Lapp</a>
+    <a class="navbar-brand" href="#">
+      <img src="./asset/img/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Sam Lapp
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -138,7 +141,7 @@
             <div class="card-body d-flex flex-column d-flex flex-column">
               <h5 class="card-title">Github</h5>
               <p class="card-text">Code from personal projects and the Kitzes Lab</p>
-              <a href="http://github.com/sammlapp" class="btn btn-primary mt-auto">View</a>
+              <div class="mt-auto"><a href="http://github.com/sammlapp" class="btn btn-primary mt-auto">View</a></div>
             </div>
           </div>
 
@@ -147,7 +150,7 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Google Scholar</h5>
               <p class="card-text">Publications and scientific contributions</p>
-              <a href="https://scholar.google.com/citations?user=X5ubHcoAAAAJ&hl=en" class="btn btn-primary mt-auto">View</a>
+              <div class="mt-auto"><a href="https://scholar.google.com/citations?user=X5ubHcoAAAAJ&hl=en" class="btn btn-primary mt-auto">View</a></div>
             </div>
           </div>
 
@@ -156,7 +159,7 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Graduate design portfolio</h5>
               <p class="card-text">Projects from MS in Engineering Design at Penn State</p>
-              <a href="https://drive.google.com/open?id=1TWVSx1dUC-XKPGuqe0_gAQnood6-fzQ2" class="btn btn-primary mt-auto">View</a>
+              <div class="mt-auto"><a href="https://drive.google.com/open?id=1TWVSx1dUC-XKPGuqe0_gAQnood6-fzQ2" class="btn btn-primary mt-auto">View</a></div>
             </div>
           </div>
 
@@ -165,7 +168,7 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Undergrad design portfolio</h5>
               <p class="card-text">Even further back into my engineering design education</p>
-              <a href="https://drive.google.com/open?id=19PkmoD2XKNaa34jJrJIVDyMhz36NGYNi" class="btn btn-primary mt-auto">View</a>
+              <div class="mt-auto"><a href="https://drive.google.com/open?id=19PkmoD2XKNaa34jJrJIVDyMhz36NGYNi" class="btn btn-primary">View</a></div>
             </div>
           </div>
         </div>
@@ -178,8 +181,11 @@
             <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">RIBBIT</h5>
-              <p class="card-text">Automated detection of frog vocalizations in audio recordings</p>
-              <a href="https://f1000research.com/posters/9-964" class="btn btn-primary mt-auto">Poster</a>
+              <p class="card-text">Automated detection of frog vocalizations in audio recordings, published in Conservation Biology</p>
+              <div class="mt-auto">
+                <a href="https://doi.org/10.1111/cobi.13718" class="btn btn-primary m-1">ConsBio Article</a>
+                <a href="https://f1000research.com/posters/9-964" class="btn btn-primary m-1">Poster</a>
+              </div>
             </div>
           </div>
 
@@ -201,7 +207,7 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Non-western music intonation</h5>
               <p class="card-text">Undergraduate thesis quantitatively investigating musical intonation in non-western music</p>
-              <a href="https://honors.libraries.psu.edu/catalog/4532sol5484" class="btn btn-primary mt-auto">View</a>
+              <div class="mt-auto"><a href="https://honors.libraries.psu.edu/catalog/4532sol5484" class="btn btn-primary mt-auto">View</a></div>
             </div>
           </div>
 
@@ -210,7 +216,7 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Passenger accomodation</h5>
               <p class="card-text">Modeling passenger accomodation in airline seating</p>
-              <a href="https://www.tandfonline.com/doi/abs/10.1080/00140139.2018.1550209" class="btn btn-primary mt-auto">View</a>
+              <div class="mt-auto"><a href="https://www.tandfonline.com/doi/abs/10.1080/00140139.2018.1550209" class="btn btn-primary mt-auto">View</a></div>
             </div>
           </div>
 
@@ -233,13 +239,23 @@
             </div>
           </div>
 
+          <div class="card col-md-5 col-lg-3 m-2" >
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">AudioMoth Testing</h5>
+              <p class="card-text">Comprehensive acoustic testing of the open-source ARU's microphone performance</p>
+              <div class="mt-auto">
+                <a href="https://github.com/kitzeslab/audiomoth-performance/blob/main/report.md" class="btn btn-primary">Report</a>
+              </div>
+            </div>
+          </div>
 
           <div class="card col-md-5 col-lg-3 m-2" >
             <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Darwin</h5>
               <p class="card-text">A strategic and educational card game on evolution</p>
-              <a href="https://playdarwin.com" class="btn btn-primary mt-auto">Website</a>
+              <div class="mt-auto"><a href="https://playdarwin.com" class="btn btn-primary">Website</a></div>
             </div>
           </div>
 
@@ -248,7 +264,7 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Suna Ansuna</h5>
               <p class="card-text">Merging music and conservation in Central PA</p>
-              <a href="http://www.sunaansuna.com/" class="btn btn-primary mt-auto">Website</a>
+              <div class="mt-auto"><a href="http://www.sunaansuna.com/" class="btn btn-primary">Website</a></div>
             </div>
           </div>
 
@@ -275,7 +291,7 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Turned On Neurons</h5>
               <p class="card-text">Funky grooves from a home-made studio album by Doppler Poppins</p>
-              <a href="https://distrokid.com/hyperfollow/dopplerpoppins/turned-on-neurons-2?fbclid=IwAR1fPFoeT1JjVQwY97-5pfqJKtE1UA4DwuEzZM94vzLyFdWpsaGlwOH2wT8" class="btn btn-primary mt-auto">Listen</a>
+              <div class="mt-auto"><a href="https://distrokid.com/hyperfollow/dopplerpoppins/turned-on-neurons-2?fbclid=IwAR1fPFoeT1JjVQwY97-5pfqJKtE1UA4DwuEzZM94vzLyFdWpsaGlwOH2wT8" class="btn btn-primary">Listen</a></div>
             </div>
           </div>
 
@@ -284,7 +300,7 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Ballade No. 1</h5>
               <p class="card-text">Chopin's piano masterpiece, performed and recorded by yours truly</p>
-              <a href="https://www.youtube.com/watch?v=yqsPrylh0ec" class="btn btn-primary mt-auto">Watch</a>
+              <div class="mt-auto"><a href="https://www.youtube.com/watch?v=yqsPrylh0ec" class="btn btn-primary mt-auto">Watch</a></div>
             </div>
           </div>
 
@@ -293,7 +309,7 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">aiDEN</h5>
               <p class="card-text">A song contemplating artificial intelligence from the Groove Room</p>
-              <a href="https://grooveroom.bandcamp.com/album/aiden" class="btn btn-primary mt-auto">Listen</a>
+              <div class="mt-auto"><a href="https://grooveroom.bandcamp.com/album/aiden" class="btn btn-primary mt-auto">Listen</a></div>
             </div>
           </div>
         </div>
