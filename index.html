@@ -21,6 +21,24 @@
 
   <title>Sam Lapp</title>
 
+  <style>
+    .image-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      /* Hide any overflow to remove white margins */
+    }
+
+    .image {
+      width: 100%;
+      /* Image will take up full container width */
+      height: auto;
+      /* Maintain aspect ratio */
+      display: block;
+      /* Remove extra space reserved for descenders */
+    }
+  </style>
+
 </head>
 
 <body>
@@ -63,6 +81,11 @@
 
     </div>
   </nav>
+
+  <div class="image-container">
+    <img class="image" src="asset/img/bado01.jpg" alt="Juvenile Barred Owl">
+  </div>
+
   <!-- Image: me -->
   <div class="container-fluid">
 
@@ -109,21 +132,25 @@
       </div>
       <div class="col-12 col-lg-6">
         <div class="m-2">
-          <h5>Biography</h5>
+          <h5>Bio</h5>
           Hi. My name is Sam Lapp.
           <br><br>
           My life is built around design, nature, music, and community.
           <br><br>
 
-          Currently, I'm focused on two major goals:
-          <ul>
-            <li>Using bioacoustics and machine learning to understand and mitigate global biodiversity loss
-            <li>Building community in a time of disconnection through shared musical experiences
-          </ul>
-          I spend my days with the <a class='myLink' href="https://kitzeslab.org">Kitzes Lab</a>
-          building open-source tools for automated birdsong recognition.
-          Outside of work, I spend my time making music, running,
-          and building community.
+          Currently, I'm conducting pursuing a PhD in the <a class='myLink' href="https://kitzeslab.org">Kitzes Lab</a>
+          at the University of Pittsburgh.
+          <br><br>
+          My research focuses on developing tools for automated the recognition of
+          biological sounds, and applying these tools to better understand ecological processes
+          and support conservation. Ultimately, I'm driven by a desire to protect biodiversity.
+          <br><br>
+          I lead the development of <a class='myLink' href="https://opensoundscape.org">OpenSoundscape</a>, an
+          open-source Python package for bioacoustic analysis. If you're interested in using OpenSoundscape,
+          I'm always happy to chat about your use case - just reach out and ask to schedule a call.
+          <br><br>
+          Outside of work, I spend my time making music, running, and building community through shared experiences of
+          learning and creative expression.
           <br>
         </div>
       </div>
@@ -133,57 +160,31 @@
       <div class="col-12 col-lg-1"></div>
       <div class="col12 col-lg-11">
 
-
-        <a class="anchor" id="portfolios"></a>
-        <h5 class="m-3">Portfolios</h5>
-
-        <div class="row col-md-12">
-          <div class="card col-md-5 col-lg-3 m-2">
-            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
-            <div class="card-body d-flex flex-column d-flex flex-column">
-              <h5 class="card-title">Github</h5>
-              <p class="card-text">Code from personal projects and the Kitzes Lab</p>
-              <div class="mt-auto"><a href="http://github.com/sammlapp" class="btn btn-primary mt-auto">View</a></div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-3 m-2">
-            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Google Scholar</h5>
-              <p class="card-text">Publications and scientific contributions</p>
-              <div class="mt-auto"><a href="https://scholar.google.com/citations?user=X5ubHcoAAAAJ&hl=en"
-                  class="btn btn-primary mt-auto">View</a></div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-3 m-2">
-            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Graduate design portfolio</h5>
-              <p class="card-text">Projects from MS in Engineering Design at Penn State</p>
-              <div class="mt-auto"><a href="https://drive.google.com/open?id=1TWVSx1dUC-XKPGuqe0_gAQnood6-fzQ2"
-                  class="btn btn-primary mt-auto">View</a></div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-3 m-2">
-            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Undergrad design portfolio</h5>
-              <p class="card-text">Even further back into my engineering design education</p>
-              <div class="mt-auto"><a href="https://drive.google.com/open?id=19PkmoD2XKNaa34jJrJIVDyMhz36NGYNi"
-                  class="btn btn-primary">View</a></div>
-            </div>
-          </div>
-        </div>
-
-
-
         <a class="anchor" id="publications"></a>
         <h5 class="m-3">Publications</h5>
 
         <div class="row col-md-12">
+
+          <div class="card col-md-5 col-lg-3 m-2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">OpenSoundscape</h5>
+              <p class="card-text">an open-source bioacoustics analysis package for Python</p>
+              <div class="mt-auto">
+                <a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14196"
+                  class="btn btn-primary m-1">Methods in Ecology and Evolution article</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 m-2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">AudioMoth performance</h5>
+              <p class="card-text">A quantitative evaluation of the performance of the low-cost acoustic recorder</p>
+              <div class="mt-auto">
+                <a href="https://www.mdpi.com/1424-8220/23/11/5254" class="btn btn-primary m-1">Sensors article</a>
+              </div>
+            </div>
+          </div>
 
           <div class="card col-md-5 col-lg-3 m-2">
             <div class="card-body d-flex flex-column">
@@ -267,6 +268,50 @@
             </div>
           </div>
 
+        </div>
+
+        <a class="anchor" id="portfolios"></a>
+        <h5 class="m-3">Portfolios</h5>
+
+        <div class="row col-md-12">
+          <div class="card col-md-5 col-lg-3 m-2">
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column d-flex flex-column">
+              <h5 class="card-title">Github</h5>
+              <p class="card-text">Code from personal projects and the Kitzes Lab</p>
+              <div class="mt-auto"><a href="http://github.com/sammlapp" class="btn btn-primary mt-auto">View</a></div>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 m-2">
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Google Scholar</h5>
+              <p class="card-text">Publications and scientific contributions</p>
+              <div class="mt-auto"><a href="https://scholar.google.com/citations?user=X5ubHcoAAAAJ&hl=en"
+                  class="btn btn-primary mt-auto">View</a></div>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 m-2">
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Graduate design portfolio</h5>
+              <p class="card-text">Projects from MS in Engineering Design at Penn State</p>
+              <div class="mt-auto"><a href="https://drive.google.com/open?id=1TWVSx1dUC-XKPGuqe0_gAQnood6-fzQ2"
+                  class="btn btn-primary mt-auto">View</a></div>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 m-2">
+            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Undergrad design portfolio</h5>
+              <p class="card-text">Even further back into my engineering design education</p>
+              <div class="mt-auto"><a href="https://drive.google.com/open?id=19PkmoD2XKNaa34jJrJIVDyMhz36NGYNi"
+                  class="btn btn-primary">View</a></div>
+            </div>
+          </div>
         </div>
 
         <a class="anchor" id="projects"></a>
@@ -389,28 +434,43 @@
 
         <div class="col-md-12 m-2">
           <script language="JavaScript">
-            var username = "sammlapp";
-            var hostname = "gmail.com";
+            var username = "sam.lapp";
+            var hostname = "pitt.edu";
             var linktext = username + "@" + hostname;
             document.write("<a class='myLink'" + " href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
           </script>
         </div>
 
+        <!-- <a class="anchor" id="photos"></a> -->
+        <!-- <h5 class="m-3">Photos</h5> -->
+
       </div>
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
+    <!-- include some photos across the whole page width -->
+  </div>
+
+
+  <div class="image-container">
+    <img class="image" src="asset/img/blbw03.jpg" alt="Blackburnian Warbler">
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
 
 </body>
+
 
 
 </html>
