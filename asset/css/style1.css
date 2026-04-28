@@ -1,31 +1,82 @@
-body{
-  font-family:Raleway, Helvetica, Arial, sans-serif;
+body {
+    font-family: Raleway, Helvetica, Arial, sans-serif;
 }
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main-content-overlay {
+    position: relative;
+    z-index: 2;
+    margin-top: -10rem;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: #1f1f1f;
+    border-radius: 1.25rem;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.22);
+    width: 80%;
+}
+
+.main-content-overlay .myLink {
+    color: #004b85;
+}
+
+@media (min-width: 992px) {
+    .main-content-overlay {
+        margin-top: -10rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .main-content-overlay {
+        margin-top: -3rem;
+        padding-top: 1.5rem;
+        border-radius: 0.75rem;
+    }
+}
+
 .red {
-background-color: red;
+    background-color: red;
 }
+
 .gray {
-background-color: #333333;
+    background-color: #333333;
     color: white;
 }
+
 .light-gray {
-background-color: #DDDDDD;
+    background-color: #DDDDDD;
 }
+
 .dark-text {
-color: #222;
+    color: #222;
 }
-.light-text{
+
+.light-text {
     color: #DDDDDD;
 }
 
 .sticky {
-    background-color: rgba(255,255,255,.95);
+    background-color: rgba(255, 255, 255, .95);
     border-bottom-color: #333333;
     border-bottom: solid;
     border-bottom-width: thin;
 }
+
 .sticky:hover {
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .center {
@@ -34,8 +85,8 @@ color: #222;
     margin-right: auto;
 }
 
-.horizontalFrames{
-    height:200px;
+.horizontalFrames {
+    height: 200px;
     padding-left: 0%;
     padding-right: 0%;
 }
@@ -49,26 +100,30 @@ color: #222;
 .top-bar {
     background-color: transparent;
 }
-    .top-bar-section li:not(.has-form) a:not(.button) {
-      background-color: transparent;
-      color: #333333;
-    }
 
-    #menu {
-        color: #999999;
-    }
-    .top-bar.expanded .title-area {
-       background-color: transparent;
-    }
-    .top-bar-section ul li {
-       background-color: transparent;
-    }
-    .top-bar.expanded .top-bar-section ul li > a {
-        border: none;
-    }
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background-color: transparent;
+    color: #333333;
+}
+
+#menu {
+    color: #999999;
+}
+
+.top-bar.expanded .title-area {
+    background-color: transparent;
+}
+
+.top-bar-section ul li {
+    background-color: transparent;
+}
+
+.top-bar.expanded .top-bar-section ul li>a {
+    border: none;
+}
 
 .row.fw {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .dark {
@@ -99,21 +154,25 @@ h3 {
 
 .button.radius {
     background-color: #220000;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-right: 5px;
 }
-    .button.radius:hover {
+
+.button.radius:hover {
     background-color: #EEEEEE;
     color: #333333;
-    }
+}
 
-p,h1,h2,h3 {
-    font-weight:200;
+p,
+h1,
+h2,
+h3 {
+    font-weight: 200;
 }
 
 /*scroll to 45px above element, so that not under top bar*/
-.anchor{
+.anchor {
     display: block;
     position: relative;
     top: -55px;
@@ -121,33 +180,40 @@ p,h1,h2,h3 {
 }
 
 /*tab formatting */
-.tabs dd > a:hover, .tabs .tab-title > a:hover {
-        background-color: #EEEEEE;
-        color: #222;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+.tabs dd>a:hover,
+.tabs .tab-title>a:hover {
+    background-color: #EEEEEE;
+    color: #222;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
-li.tab-title {
-        background-color: transparent;
-        color: #EEEEEE;
-        height:40px;
 
-    }
-    .tabs dd > a, .tabs .tab-title > a {
-        background-color: transparent;
-        color: #EEEEEE;
-        height:40px;
-    }
-    li.tab-title.active {
-        background-color: #EEEEEE;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        height:40px;
-    }
-    .tabs dd > a, .tabs .tab-title.active > a {
-        background-color: transparent;
-        height:40px;
-    }
+li.tab-title {
+    background-color: transparent;
+    color: #EEEEEE;
+    height: 40px;
+
+}
+
+.tabs dd>a,
+.tabs .tab-title>a {
+    background-color: transparent;
+    color: #EEEEEE;
+    height: 40px;
+}
+
+li.tab-title.active {
+    background-color: #EEEEEE;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 40px;
+}
+
+.tabs dd>a,
+.tabs .tab-title.active>a {
+    background-color: transparent;
+    height: 40px;
+}
 
 div.tabs-content.contained {
     background-color: #EEEEEE;
@@ -158,64 +224,64 @@ div.tabs-content.contained {
 
 /*downward arrow*/
 .arrow-down {
-	width: 0;
-	height: 0;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
 
-	border-top: 20px solid #E8E8E8;
+    border-top: 20px solid #E8E8E8;
 
 }
 
-.black{
+.black {
     background-color: #000000;
     color: #999999;
 }
 
-.myLink{
-  color:#589393;
-  text-decoration:none;
+.myLink {
+    color: #589393;
+    text-decoration: none;
 }
 
-.myLink:hover{
-  color:#185353;
-  text-decoration:none;
+.myLink:hover {
+    color: #185353;
+    text-decoration: none;
 }
 
-.btn-primary{
-  background:#589393;
-  border: none;
-  /* text-decoration:none; */
+.btn-primary {
+    background: #589393;
+    border: none;
+    /* text-decoration:none; */
 }
-.btn-primary:hover{
-  background:#387373;
-  border: none;
-  /* text-decoration:none; */
+
+.btn-primary:hover {
+    background: #387373;
+    border: none;
+    /* text-decoration:none; */
 }
+
 .btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:focus{
-  background-color:#387373;
-  border: none;
-  box-shadow:none;
-  outline:none;
+.btn-primary:focus {
+    background-color: #387373;
+    border: none;
+    box-shadow: none;
+    outline: none;
 }
 
-#map{
-  height:500px;
-  width:80%;
-  padding:20px;
-  margin: 0 auto 0 auto;
+#map {
+    height: 500px;
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto 0 auto;
 }
 
-#content{
-    color:black;
-    font-size=0.7em;
+#content {
+    color: black;
+    font-size: 0.7em;
 }
-#content h1{
-    font-size:2em;
+
+#content h1 {
+    font-size: 2em;
 }
 
 /* thumbnail picture style */
-.th{
-
-}

@@ -21,24 +21,6 @@
 
   <title>Sam Lapp</title>
 
-  <style>
-    .image-container {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      /* Hide any overflow to remove white margins */
-    }
-
-    .image {
-      width: 100%;
-      /* Image will take up full container width */
-      height: auto;
-      /* Maintain aspect ratio */
-      display: block;
-      /* Remove extra space reserved for descenders */
-    }
-  </style>
-
 </head>
 
 <body>
@@ -83,11 +65,11 @@
   </nav>
 
   <div class="image-container">
-    <img class="image" src="asset/img/anianiau_facing_away.jpg" alt="anianiau>
+    <img class="image" src="asset/img/anianiau_facing_away.jpg" alt="anianiau">
   </div>
 
   <!-- Image: me -->
-  <div class=" container-fluid">
+  <div class="container-fluid main-content-overlay">
 
     <!-- <div class="mx-auto m-2 text-center">
         <h5>SamLapp.com</h5>
@@ -118,39 +100,51 @@
           <div class="p-2">
             <h5>Sam Lapp</h5>
             <p>Conservation researcher<br>
-              <a class="myLink" href="https://www.kitzeslab.org/"> Kitzes Lab, University of Pittsburgh</a>
+              <script language="JavaScript">
+                var username = "sam.lapp";
+                var hostname = "pitt.edu";
+                var linktext = username + "@" + hostname;
+                document.write("<a class='myLink'" + " href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
+              </script><br>
+              <a class="myLink"
+                href="https://drive.google.com/file/d/1vbxhxvoV88ig_N-vA1uSNTus9Nh47s2k/view?usp=sharing">CV</a><br><br>
+
+
+              <a class="myLink" href="https://www.kitzeslab.org/"> Kitzes Lab, University of Pittsburgh</a><br>
+              <a class="myLink" href="https://estherrolf.com/">Rolf Lab, CU Boulder</a><br>
+              <a class="myLink" href="https://beerylab.csail.mit.edu">Beery Lab, MIT</a><br>
             </p>
-            <script language="JavaScript">
-              var username = "sam.lapp";
-              var hostname = "pitt.edu";
-              var linktext = username + "@" + hostname;
-              document.write("<a class='myLink'" + " href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
-            </script>
 
           </div>
         </div>
       </div>
       <div class="col-12 col-lg-6">
         <div class="m-2">
-          <h5>Bio</h5>
           Hi. My name is Sam Lapp.
           <br><br>
           My life is built around design, nature, music, and community.
           <br><br>
 
-          Currently, I'm conducting my dissertation research in the <a class='myLink'
-            href="https://kitzeslab.org">Kitzes Lab</a>
-          at the University of Pittsburgh, and am pursuing post doc research opportunities for Fall 2026.
+          Currently, I'm finishing my dissertation research in the <a class='myLink' href="https://kitzeslab.org">Kitzes
+            Lab</a>
+          at the University of Pittsburgh, and am starting a postdoctoral fellowship at ESIIL, CU Boulder advised by <a
+            class='myLink' href="https://estherrolf.com">Dr. Esther Rolf</a> and <a class='myLink'
+            href="https://beerylab.csail.mit.edu/">Dr. Sara Beery</a>.
           <br><br>
           My research focuses on developing machine learning and data analysis tools for automated the recognition of
-          biological sounds, and applying these tools to better understand ecological processes
-          and support conservation. Ultimately, I'm driven by a desire to protect biodiversity.
+          biological sounds and interpretation of aerial LiDAR data. I work closely with ecologists to apply these
+          approaches to large-scale sensor data,
+          enabling large-scale investigation of ecological processes and supporting conservation decision-making.
+          Ultimately, I'm driven by a desire to protect biodiversity.
           <br><br>
           I lead the development of <a class='myLink' href="https://opensoundscape.org">OpenSoundscape</a>, an
-          open-source Python package for bioacoustic analysis. If you're interested in using OpenSoundscape,
+          open-source Python package for bioacoustic analysis, and <a class='myLink'
+            href='https://github.com/sammlapp/dipper'>Dipper</a>, a desktop tool for passive acoustic monitoring
+          analysis. If you're interested in using OpenSoundscape or Dipper,
           I'm always happy to chat about your use case - just reach out and ask to schedule a call.
           <br><br>
-          Outside of work, I spend my time making music, running, and building community through shared experiences of
+          Outside of work, I spend my time making music, exploring the outdoors, and building community through shared
+          experiences of
           learning and creative expression.
           <br>
         </div>
