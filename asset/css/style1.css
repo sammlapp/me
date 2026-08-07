@@ -251,6 +251,7 @@ div.tabs-content.contained {
 .btn-primary {
     background: #589393;
     border: none;
+    margin-top: 5px;
     /* text-decoration:none; */
 }
 

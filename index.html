@@ -41,10 +41,10 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#portfolios">Portfolios</a>
+          <a class="nav-link" href="#publications">Publications</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#publications">Publications</a>
+          <a class="nav-link" href="#portfolios">Portfolios</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#projects">Projects</a>
@@ -99,10 +99,10 @@
                </div> -->
           <div class="p-2">
             <h5>Sam Lapp</h5>
-            <p>Conservation researcher<br>
+            <p>AI+Conservation researcher<br>
               <script language="JavaScript">
                 var username = "sam.lapp";
-                var hostname = "pitt.edu";
+                var hostname = "colorado.edu";
                 var linktext = username + "@" + hostname;
                 document.write("<a class='myLink'" + " href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
               </script><br>
@@ -110,7 +110,6 @@
                 href="https://drive.google.com/file/d/1vbxhxvoV88ig_N-vA1uSNTus9Nh47s2k/view?usp=sharing">CV</a><br><br>
 
 
-              <a class="myLink" href="https://www.kitzeslab.org/"> Kitzes Lab, University of Pittsburgh</a><br>
               <a class="myLink" href="https://estherrolf.com/">Rolf Lab, CU Boulder</a><br>
               <a class="myLink" href="https://beerylab.csail.mit.edu">Beery Lab, MIT</a><br>
             </p>
@@ -122,30 +121,32 @@
         <div class="m-2">
           Hi. My name is Sam Lapp.
           <br><br>
-          My life is built around design, nature, music, and community.
+          My research leverages emerging artificial intelligence, machine learning, and automated sensing technologies
+          to understand natural ecosystems and inform the conservation of biodiversity. I emphasize open science and
+          inclusivity, in the belief that
           <br><br>
 
-          Currently, I'm finishing my dissertation research in the <a class='myLink' href="https://kitzeslab.org">Kitzes
-            Lab</a>
-          at the University of Pittsburgh, and am starting a postdoctoral fellowship at ESIIL, CU Boulder advised by <a
-            class='myLink' href="https://estherrolf.com">Dr. Esther Rolf</a> and <a class='myLink'
-            href="https://beerylab.csail.mit.edu/">Dr. Sara Beery</a>.
-          <br><br>
-          My research focuses on developing machine learning and data analysis tools for automated the recognition of
-          biological sounds and interpretation of aerial LiDAR data. I work closely with ecologists to apply these
+          Currently, I am a postdoctoral fellow at <a class='myLink' href="https://esiil.org/">ESIIL</a>, CU Boulder,
+          advised by <a class='myLink' href="https://estherrolf.com">Dr. Esther Rolf</a> and <a class='myLink'
+            href="https://beerylab.csail.mit.edu/">Dr. Sara Beery</a>. My current research projects focus on:
+          <ul>
+            <li> Providing user-friendly tools for analyzing passive acoustic monitoring datasets </li>
+            <li> Developing automated methods for individual identification of birds by their vocal signatures</li>
+            <li> Training machine learning models to extract rich insights from airborne LiDAR</li>
+          </ul>
+          I work closely with ecologists and conservation
+          practitioners to apply these
           approaches to large-scale sensor data,
           enabling large-scale investigation of ecological processes and supporting conservation decision-making.
-          Ultimately, I'm driven by a desire to protect biodiversity.
           <br><br>
-          I lead the development of <a class='myLink' href="https://opensoundscape.org">OpenSoundscape</a>, an
-          open-source Python package for bioacoustic analysis, and <a class='myLink'
-            href='https://github.com/sammlapp/dipper'>Dipper</a>, a desktop tool for passive acoustic monitoring
-          analysis. If you're interested in using OpenSoundscape or Dipper,
+          I lead the development of <a class='myLink' href='https://github.com/sammlapp/dipper'>Dipper</a>, a desktop
+          tool for passive acoustic monitoring
+          analysis, and <a class='myLink' href="https://opensoundscape.org">OpenSoundscape</a>, an
+          open-source Python package for bioacoustic analysis. If you're interested in using Dipper or OpenSoundscape,
           I'm always happy to chat about your use case - just reach out and ask to schedule a call.
           <br><br>
           Outside of work, I spend my time making music, exploring the outdoors, and building community through shared
-          experiences of
-          learning and creative expression.
+          experiences of learning and creative expression.
           <br>
         </div>
       </div>
@@ -264,7 +265,7 @@
           <div class="card col-md-5 col-lg-3 m-2">
             <div class="card-body d-flex flex-column d-flex flex-column">
               <h5 class="card-title">Github</h5>
-              <p class="card-text">Code from personal projects and the Kitzes Lab</p>
+              <p class="card-text">Code from personal and research projects</p>
               <div class="mt-auto"><a href="https://github.com/sammlapp" class="btn btn-primary mt-auto">View</a></div>
             </div>
           </div>
@@ -311,6 +312,16 @@
         <h5 class="m-3">Projects</h5>
 
         <div class="row col-md-12">
+          <div class="card col-md-5 col-lg-3 m-2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Dipper</h5>
+              <p class="card-text">Open-source desktop app for passive acoustic monitoring workflows</p>
+              <div class="mt-auto">
+                <a href="https://sammlapp.github.io/dipper/" class="btn btn-primary">Docs</a>
+                <a href="https://github.com/sammlapp/dipper" class="btn btn-primary">Code</a>
+              </div>
+            </div>
+          </div>
 
           <div class="card col-md-5 col-lg-3 m-2">
             <div class="card-body d-flex flex-column">
@@ -325,6 +336,28 @@
 
           <div class="card col-md-5 col-lg-3 m-2">
             <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Ovenbird Individual Song ID</h5>
+              <p class="card-text">Explore song variation across individual Ovenbirds</p>
+              <div class="mt-auto">
+                <a href="https://ovenbird-id.streamlit.app/" class="btn btn-primary">Webapp</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 m-2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                <emph>Rana sierrae & muscosa</emph> vocalization map
+              </h5>
+              <p class="card-text">Explore vocalizations of endangered frogs across their geographic range</p>
+              <div class="mt-auto">
+                <a href="https://ovenbird-id.streamlit.app/" class="btn btn-primary">Webapp</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-3 m-2">
+            <div class="card-body d-flex flex-column">
               <h5 class="card-title">Bioacoustics Model Zoo</h5>
               <p class="card-text">A unified API for bioacoustic foundation models</p>
               <div class="mt-auto">
@@ -332,6 +365,18 @@
               </div>
             </div>
           </div>
+
+          <div class="card col-md-5 col-lg-3 m-2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Acoustic Distance</h5>
+              <p class="card-text">Webapp to explore relationships of vocalization source volume, attenuation, and
+                background noise level with acoustic detection spaces</p>
+              <div class="mt-auto">
+                <a href="https://bird-distance.streamlit.app/" class="btn btn-primary">Webapp</a>
+              </div>
+            </div>
+          </div>
+
 
           <div class="card col-md-5 col-lg-3 m-2">
             <div class="card-body d-flex flex-column">
@@ -433,7 +478,7 @@
         <div class="col-md-12 m-2">
           <script language="JavaScript">
             var username = "sam.lapp";
-            var hostname = "pitt.edu";
+            var hostname = "colorado.edu";
             var linktext = username + "@" + hostname;
             document.write("<a class='myLink'" + " href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
           </script>
@@ -446,7 +491,7 @@
 
     </div>
 
-    <!-- include some photos across the whole page width -->
+
   </div>
 
 
