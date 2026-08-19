@@ -21,6 +21,19 @@
 
   <title>Sam Lapp</title>
 
+  <style>
+    .card.col-lg-4 {
+      flex: 0 0 calc(33.333% - 1rem);
+      max-width: calc(33.333% - 1rem);
+    }
+
+    .card-img-top {
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      width: 100%;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -42,6 +55,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#active-projects">Active Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#portfolios">Portfolios</a>
@@ -89,9 +105,9 @@
 
     <div class="row m-3">
       <div class="col-12 col-lg-1"></div>
-      <div class="col-12 col-lg-3">
+      <div class="col-12 col-lg-4">
         <div class="card mx-auto col-sm-8 col-md-6 col-lg-12">
-          <img src="./asset/img/headshot.jpg" class="m-2 card-img-top img-rounded" alt="...">
+          <img src="./asset/img/headshot.jpg" class="m-2 img-rounded" alt="...">
           <!-- <div class="card-body">
                  <h5 class="card-title">Card title</h5>
                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -99,7 +115,7 @@
                </div> -->
           <div class="p-2">
             <h5>Sam Lapp</h5>
-            <p>AI+Conservation researcher<br>
+            <p>AI for biodiversity<br>
               <script language="JavaScript">
                 var username = "sam.lapp";
                 var hostname = "colorado.edu";
@@ -153,12 +169,44 @@
       <div class="col-12 col-lg-1"></div>
       <div class="col12 col-lg-11">
 
+        <a class="anchor" id="active-projects"></a>
+        <h5 class="m-3">Current Research</h5>
+
+        <div class="row col-md-12">
+          <div class="card col-md-5 col-lg-4 m-2">
+            <img src="./asset/img/dipper.png" class="card-img-top" alt="Project photo">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Dipper</h5>
+              <p class="card-text">End-to-end acoustic monitoring desktop app</p>
+              <a href="https://dipperPAM.org" class="btn btn-primary m-1">website</a>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-4 m-2">
+            <img src="./asset/img/lidar.png" class="card-img-top" alt="Project photo">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Aerial LiDAR</h5>
+              <p class="card-text">Developing machine learning models to interpret 3d habitat structure.</p>
+            </div>
+          </div>
+
+          <div class="card col-md-5 col-lg-4 m-2">
+            <img src="./asset/img/ovenbird.webp" class="card-img-top" alt="Project photo">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Acoustic individual identification</h5>
+              <p class="card-text">Recognizing individual animals' vocal signatures.</p>
+              <a href="https://www.audubon.org/magazine/these-5-research-projects-show-how-ai-revolutionizing-bird-conservation"
+                class="btn btn-primary m-1">Audubon feature</a>
+            </div>
+          </div>
+        </div>
+
         <a class="anchor" id="publications"></a>
         <h5 class="m-3">Selected Publications</h5>
 
         <div class="row col-md-12">
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Individual Recognition of Birds by Song</h5>
               <p class="card-text">Automated individual recognition enables acoustic recapture from PAM data</p>
@@ -176,7 +224,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">OpenSoundscape</h5>
               <p class="card-text">an open-source bioacoustics analysis package for Python</p>
@@ -189,7 +237,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Underwater frog vocalizations</h5>
               <p class="card-text">Surprising patterns in underwater vocalizations of endangered R. sierrae</p>
@@ -200,7 +248,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">AudioMoth performance</h5>
               <p class="card-text">A quantitative evaluation of the performance of the low-cost acoustic recorder</p>
@@ -212,7 +260,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Automated Ruffed Grouse recognizer</h5>
               <p class="card-text">A novel signal processing algorithm detects Ruffed Grouse drumming displays</p>
@@ -226,7 +274,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">RIBBIT: frog detector</h5>
@@ -242,7 +290,7 @@
             </div>
           </div>
 
-          <!-- <div class="card col-md-5 col-lg-3 m-2">
+          <!-- <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Non-western music intonation</h5>
               <p class="card-text">Undergraduate thesis quantitatively investigating musical intonation in non-western
@@ -255,11 +303,13 @@
 
         </div>
 
+
+
         <a class="anchor" id="portfolios"></a>
         <h5 class="m-3">Portfolios</h5>
 
         <div class="row col-md-12">
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column d-flex flex-column">
               <h5 class="card-title">Github</h5>
               <p class="card-text">Code from personal and research projects</p>
@@ -267,7 +317,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Google Scholar</h5>
               <p class="card-text">Publications and scientific contributions</p>
@@ -276,7 +326,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">OrcID</h5>
               <p class="card-text">Publications and scientific contributions</p>
@@ -286,7 +336,7 @@
           </div>
 
           <!-- 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Graduate design portfolio</h5>
               <p class="card-text">Projects from MS in Engineering Design at Penn State</p>
@@ -295,7 +345,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Undergrad design portfolio</h5>
               <p class="card-text">Even further back into my engineering design education</p>
@@ -309,7 +359,7 @@
         <h5 class="m-3">Projects</h5>
 
         <div class="row col-md-12">
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Dipper</h5>
               <p class="card-text">Open-source desktop app for passive acoustic monitoring workflows</p>
@@ -320,7 +370,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">OpenSoundscape</h5>
               <p class="card-text">Open-source python library for bioacoustics research</p>
@@ -331,7 +381,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Ovenbird Individual Song ID</h5>
               <p class="card-text">Explore song variation across individual Ovenbirds</p>
@@ -341,7 +391,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">
                 <emph>Rana sierrae & muscosa</emph> vocalization map
@@ -353,7 +403,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Bioacoustics Model Zoo</h5>
               <p class="card-text">A unified API for bioacoustic foundation models</p>
@@ -363,7 +413,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Acoustic Distance</h5>
               <p class="card-text">Webapp to explore relationships of vocalization source volume, attenuation, and
@@ -375,7 +425,7 @@
           </div>
 
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">AudioMoth Testing</h5>
               <p class="card-text">Comprehensive acoustic testing of the open-source ARU's microphone performance</p>
@@ -386,7 +436,7 @@
             </div>
           </div>
           <!-- 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Darwin</h5>
               <p class="card-text">A strategic and educational card game on evolution</p>
@@ -394,7 +444,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3  m-2">
+          <div class="card col-md-5 col-lg-4  m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Suna Ansuna</h5>
               <p class="card-text">Merging music and conservation in Central PA</p>
@@ -402,7 +452,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">The Groove Room</h5>
               <p class="card-text">One-day community-oriented music writing hacks</p>
@@ -419,7 +469,7 @@
 
         <div class="row col-md-12">
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Tales of the Tender Cactus</h5>
               <p class="card-text">Whale Jazz and Barnackle Funk from The Deep Casual</p>
@@ -429,7 +479,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3 m-2">
+          <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Turned On Neurons</h5>
               <p class="card-text">Funky grooves from a home-made studio album by Doppler Poppins</p>
@@ -439,7 +489,7 @@
             </div>
           </div>
 
-          <div class="card col-md-5 col-lg-3  m-2">
+          <div class="card col-md-5 col-lg-4  m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Ballade No. 1</h5>
               <p class="card-text">Chopin's piano masterpiece, performed and recorded by yours truly</p>
@@ -448,7 +498,7 @@
             </div>
           </div>
 
-          <!-- <div class="card col-md-5 col-lg-3 m-2">
+          <!-- <div class="card col-md-5 col-lg-4 m-2">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">aiDEN</h5>
               <p class="card-text">A song contemplating artificial intelligence from the Groove Room</p>
