@@ -1,569 +1,132 @@
 <!DOCTYPE html>
-
-<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html lang="en">
-
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- If you delete this meta tag World War Z will become a reality -->
 
-  <!-- load google fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
+  <title>Sam Lapp — AI for biodiversity</title>
+  <meta name="description" content="I build machine learning methods and open tools that turn acoustic and airborne sensor data into insight for ecologists and conservation practitioners.">
+  <meta property="og:title" content="Sam Lapp — AI for biodiversity">
+  <meta property="og:description" content="Machine learning methods and open tools for acoustic and airborne sensor data, for ecologists and conservation practitioners.">
+  <meta property="og:image" content="https://samlapp.com/asset/img/bg/elepaio.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <!-- <link rel="stylesheet" href="./asset/css/style1.css"> -->
-  <link rel="shortcut icon" href="favicon.png" />
-  <link href="./asset/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./asset/css/style1.css" rel="stylesheet">
-
-  <title>Sam Lapp</title>
-
-  <style>
-    .card.col-lg-4 {
-      flex: 0 0 calc(33.333% - 1rem);
-      max-width: calc(33.333% - 1rem);
-    }
-
-    .card-img-top {
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-      width: 100%;
-    }
-  </style>
-
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="asset/img/bg/elepaio.jpg">
+  <link rel="stylesheet" href="asset/css/site.css">
 </head>
-
 <body>
 
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img src="./asset/img/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
-      Sam Lapp
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<div class="bg" aria-hidden="true"><div class="layer"></div><div class="layer"></div></div>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#publications">Publications</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#active-projects">Active Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolios">Portfolios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#music">Music</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#resumes">CV</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
+<div class="shell">
 
-      </ul>
-
-    </div>
-  </nav>
-
-  <div class="image-container">
-    <img class="image" src="asset/img/anianiau_facing_away.jpg" alt="anianiau">
-  </div>
-
-  <!-- Image: me -->
-  <div class="container-fluid main-content-overlay">
-
-    <!-- <div class="mx-auto m-2 text-center">
-        <h5>SamLapp.com</h5>
-      </div> -->
-
-    <!-- <br><br><b> -->
-    <!-- Live Stream -->
-    <!-- listen to past sessions <a class='myLink' href="https://mixlr.com/sammlapp/showreel/">here </a>
-      <iframe src="https://mixlr.com/users/7507226/embed?color=981414" width="100%" height="180px" scrolling="no" frameborder="no" marginheight="0" marginwidth="0"></iframe><small><a href="https://mixlr.com/sammlapp" style="color:#1a1a1a;text-align:left; font-family:Helvetica, sans-serif; font-size:11px;">sammlapp is on Mixlr</a></small> -->
-
-    <!-- <img src="images/sam_piano.jpg" alt="photo by Christina Platt" style="width:70%"><br><br> -->
-    <!-- <div style="color:#BBBBBB; padding:10px; align:center">Life is blurry if you look too far ahead.</div> -->
-
-    <!--     <br><br>
-   -->
-    <div class="row m-2"></div>
-
-    <div class="row m-3">
-      <div class="col-12 col-lg-1"></div>
-      <div class="col-12 col-lg-4">
-        <div class="card mx-auto col-sm-8 col-md-6 col-lg-12">
-          <img src="./asset/img/headshot.jpg" class="m-2 img-rounded" alt="...">
-          <!-- <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 <a href="#" class="btn btn-primary">Go somewhere</a>
-               </div> -->
-          <div class="p-2">
-            <h5>Sam Lapp</h5>
-            <p>AI for biodiversity<br>
-              <script language="JavaScript">
-                var username = "sam.lapp";
-                var hostname = "colorado.edu";
-                var linktext = username + "@" + hostname;
-                document.write("<a class='myLink'" + " href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
-              </script><br>
-              <a class="myLink"
-                href="https://drive.google.com/file/d/1vbxhxvoV88ig_N-vA1uSNTus9Nh47s2k/view?usp=sharing">CV</a><br><br>
-
-
-              <a class="myLink" href="https://estherrolf.com/">Rolf Lab, CU Boulder</a><br>
-              <a class="myLink" href="https://beerylab.csail.mit.edu">Beery Lab, MIT</a><br>
-            </p>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-6">
-        <div class="m-2">
-          My research leverages emerging artificial intelligence, machine learning, and automated sensing technologies
-          to understand natural ecosystems and inform the conservation of biodiversity. I strive to make science open,
-          equitable, and inclusive.
-          <br><br>
-
-          Currently, I am a postdoctoral fellow at <a class='myLink' href="https://esiil.org/">ESIIL</a>, CU Boulder,
-          advised by <a class='myLink' href="https://estherrolf.com">Dr. Esther Rolf</a> and <a class='myLink'
-            href="https://beerylab.csail.mit.edu/">Dr. Sara Beery</a>. My current research projects focus on:
-          <ul>
-            <li> Providing user-friendly tools for analyzing passive acoustic monitoring datasets </li>
-            <li> Developing automated methods for individual identification of birds by their vocal signatures</li>
-            <li> Training machine learning models to extract rich insights from airborne LiDAR</li>
-          </ul>
-          I work closely with ecologists and conservation practitioners to apply these approaches to large-scale sensor
-          data,
-          enabling large-scale investigation of ecological processes and supporting conservation decision-making.
-          <br><br>
-          I lead the development of <a class='myLink' href='https://github.com/sammlapp/dipper'>Dipper</a>, a desktop
-          tool for passive acoustic monitoring
-          analysis, and <a class='myLink' href="https://opensoundscape.org">OpenSoundscape</a>, an
-          open-source Python package for bioacoustic analysis. If you're interested in using Dipper or OpenSoundscape,
-          please reach out and ask to schedule a call.
-          <br><br>
-          Outside of work, I spend my time making music, exploring the outdoors, and building community through shared
-          experiences of learning and creative expression.
-          <br>
-        </div>
-      </div>
+  <!-- LEFT third: stays put -->
+  <header class="intro">
+    <div class="me">
+      <img src="asset/img/headshot-sm.jpg" alt="Sam Lapp" width="140" height="140">
+      <div><b>Sam Lapp</b><span>Postdoc, ESIIL · CU Boulder</span></div>
     </div>
 
-    <div class="row m-3">
-      <div class="col-12 col-lg-1"></div>
-      <div class="col12 col-lg-11">
+    <h1>AI for <em>biodiversity</em></h1>
+    <p class="tagline">I build machine learning methods and open tools that turn acoustic and airborne sensor data into insight for ecologists and conservation practitioners, including recognizing individual birds by their songs.</p>
 
-        <a class="anchor" id="active-projects"></a>
-        <h5 class="m-3">Current Research</h5>
-
-        <div class="row col-md-12">
-          <div class="card col-md-5 col-lg-4 m-2">
-            <img src="./asset/img/dipper.png" class="card-img-top" alt="Project photo">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Dipper</h5>
-              <p class="card-text">End-to-end acoustic monitoring desktop app</p>
-              <a href="https://sammlapp.github.io/dipper" class="btn btn-primary m-1">website</a>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <img src="./asset/img/lidar.png" class="card-img-top" alt="Project photo">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Aerial LiDAR</h5>
-              <p class="card-text">Developing machine learning models to interpret 3d habitat structure.</p>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <img src="./asset/img/ovenbird.webp" class="card-img-top" alt="Project photo">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Acoustic individual identification</h5>
-              <p class="card-text">Recognizing individual animals' vocal signatures.</p>
-              <a href="https://www.science.org/content/article/ai-can-track-single-bird-over-time-based-solely-its-song"
-                class="btn btn-primary m-1">Science: News</a>
-              <a href="https://www.audubon.org/magazine/these-5-research-projects-show-how-ai-revolutionizing-bird-conservation"
-                class="btn btn-primary m-1">Audubon feature</a>
-              <a href="https://medium.com/@divineanakor/an-ai-learned-to-tell-individual-birds-apart-by-song-alone-b3d9cf8a208a"
-                class="btn btn-primary m-1">Medium post</a>
-            </div>
-          </div>
-        </div>
-
-        <a class="anchor" id="publications"></a>
-        <h5 class="m-3">Selected Publications</h5>
-
-        <div class="row col-md-12">
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Individual Recognition of Birds by Song</h5>
-              <p class="card-text">Automated individual recognition enables acoustic recapture from PAM data</p>
-              <div class="mt-auto">
-                <a href="https://rdcu.be/17eYRjErmKSa" class="btn btn-primary m-1">Nature Methods Article</a>
-                <a href="https://github.com/sammlapp/ovenbird-individual-recognition"
-                  class="btn btn-primary m-1">Code</a>
-                <a href="https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=2049&revision=1"
-                  class="btn btn-primary m-1">Data</a>
-                <a href="https://ovenbird-id.streamlit.app/" class="btn btn-primary m-1">Interactive Webapp</a>
-
-              </div>
-
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">OpenSoundscape</h5>
-              <p class="card-text">an open-source bioacoustics analysis package for Python</p>
-              <div class="mt-auto">
-                <a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14196"
-                  class="btn btn-primary m-1">Methods in Ecology and Evolution article</a>
-                <a href="https://opensoundscape.org" class="btn btn-primary">Docs</a>
-                <a href="https://github.com/kitzeslab/opensoundscape" class="btn btn-primary">Code</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Underwater frog vocalizations</h5>
-              <p class="card-text">Surprising patterns in underwater vocalizations of endangered R. sierrae</p>
-              <div class="mt-auto">
-                <a href="https://www.journals.uchicago.edu/doi/full/10.1086/729422" class="btn btn-primary m-1">American
-                  Naturalist article</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">AudioMoth performance</h5>
-              <p class="card-text">A quantitative evaluation of the performance of the low-cost acoustic recorder</p>
-              <div class="mt-auto">
-                <a href="https://www.mdpi.com/1424-8220/23/11/5254" class="btn btn-primary m-1">Sensors article</a>
-                <a href="https://github.com/kitzeslab/audiomoth-performance/blob/main/report.md"
-                  class="btn btn-primary m-1">Whitepaper</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Automated Ruffed Grouse recognizer</h5>
-              <p class="card-text">A novel signal processing algorithm detects Ruffed Grouse drumming displays</p>
-              <div class="mt-auto">
-                <a href="https://wildlife.onlinelibrary.wiley.com/doi/10.1002/wsb.1395" class="btn btn-primary m-1">WSB
-                  Article</a>
-                <a href="https://github.com/kitzeslab/ruffed_grouse_manuscript_2022"
-                  class="btn btn-primary m-1">Code</a>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <!-- <img src="./asset/img/headshot.jpg" class="card-img-top img-rounded" alt="..."> -->
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">RIBBIT: frog detector</h5>
-              <p class="card-text">Automated detection of frog vocalizations in audio recordings, published in
-                Conservation Biology</p>
-              <div class="mt-auto">
-                <a href="https://doi.org/10.1111/cobi.13718" class="btn btn-primary m-1">ConsBio Article</a>
-                <a href="https://f1000research.com/posters/9-964" class="btn btn-primary m-1">Poster</a>
-                <a href="https://github.com/kitzeslab/ribbit_manuscript_notebooks" class="btn btn-primary m-1">Code
-                  (Python)</a>
-                <a href="https://github.com/kitzeslab/r-ribbit" class="btn btn-primary m-1">R Implementation</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Non-western music intonation</h5>
-              <p class="card-text">Undergraduate thesis quantitatively investigating musical intonation in non-western
-                music</p>
-              <div class="mt-auto"><a href="https://honors.libraries.psu.edu/catalog/4532sol5484"
-                  class="btn btn-primary mt-auto">Thesis</a></div>
-            </div>
-          </div> -->
-
-
-        </div>
-
-
-
-        <a class="anchor" id="portfolios"></a>
-        <h5 class="m-3">Portfolios</h5>
-
-        <div class="row col-md-12">
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column d-flex flex-column">
-              <h5 class="card-title">Github</h5>
-              <p class="card-text">Code from personal and research projects</p>
-              <div class="mt-auto"><a href="https://github.com/sammlapp" class="btn btn-primary mt-auto">View</a></div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Google Scholar</h5>
-              <p class="card-text">Publications and scientific contributions</p>
-              <div class="mt-auto"><a href="https://scholar.google.com/citations?user=X5ubHcoAAAAJ&hl=en"
-                  class="btn btn-primary mt-auto">View</a></div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">OrcID</h5>
-              <p class="card-text">Publications and scientific contributions</p>
-              <div class="mt-auto"><a href="https://orcid.org/0000-0003-1637-6822"
-                  class="btn btn-primary mt-auto">View</a></div>
-            </div>
-          </div>
-
-          <!-- 
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Graduate design portfolio</h5>
-              <p class="card-text">Projects from MS in Engineering Design at Penn State</p>
-              <div class="mt-auto"><a href="https://drive.google.com/open?id=1TWVSx1dUC-XKPGuqe0_gAQnood6-fzQ2"
-                  class="btn btn-primary mt-auto">View</a></div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Undergrad design portfolio</h5>
-              <p class="card-text">Even further back into my engineering design education</p>
-              <div class="mt-auto"><a href="https://drive.google.com/open?id=19PkmoD2XKNaa34jJrJIVDyMhz36NGYNi"
-                  class="btn btn-primary">View</a></div>
-            </div>
-          </div> -->
-        </div>
-
-        <a class="anchor" id="projects"></a>
-        <h5 class="m-3">Projects</h5>
-
-        <div class="row col-md-12">
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Dipper</h5>
-              <p class="card-text">Open-source desktop app for passive acoustic monitoring workflows</p>
-              <div class="mt-auto">
-                <a href="https://sammlapp.github.io/dipper/" class="btn btn-primary">Docs</a>
-                <a href="https://github.com/sammlapp/dipper" class="btn btn-primary">Code</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">OpenSoundscape</h5>
-              <p class="card-text">Open-source python library for bioacoustics research</p>
-              <div class="mt-auto">
-                <a href="https://opensoundscape.org" class="btn btn-primary">Docs</a>
-                <a href="https://github.com/kitzeslab/opensoundscape" class="btn btn-primary">Code</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Ovenbird Individual Song ID</h5>
-              <p class="card-text">Explore song variation across individual Ovenbirds</p>
-              <div class="mt-auto">
-                <a href="https://ovenbird-id.streamlit.app/" class="btn btn-primary">Webapp</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">
-                <emph>Rana sierrae & muscosa</emph> vocalization map
-              </h5>
-              <p class="card-text">Explore vocalizations of endangered frogs across their geographic range</p>
-              <div class="mt-auto">
-                <a href="https://ovenbird-id.streamlit.app/" class="btn btn-primary">Webapp</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Bioacoustics Model Zoo</h5>
-              <p class="card-text">A unified API for bioacoustic foundation models</p>
-              <div class="mt-auto">
-                <a href="https://github.com/kitzeslab/bioacoustics-model-zoo" class="btn btn-primary">Code</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Acoustic Distance</h5>
-              <p class="card-text">Webapp to explore relationships of vocalization source volume, attenuation, and
-                background noise level with acoustic detection spaces</p>
-              <div class="mt-auto">
-                <a href="https://bird-distance.streamlit.app/" class="btn btn-primary">Webapp</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">AudioMoth Testing</h5>
-              <p class="card-text">Comprehensive acoustic testing of the open-source ARU's microphone performance</p>
-              <div class="mt-auto">
-                <a href="https://github.com/kitzeslab/audiomoth-performance/blob/main/report.md"
-                  class="btn btn-primary">Report</a>
-              </div>
-            </div>
-          </div>
-          <!-- 
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Darwin</h5>
-              <p class="card-text">A strategic and educational card game on evolution</p>
-              <div class="mt-auto"><a href="https://playdarwin.com" class="btn btn-primary">Website</a></div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4  m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Suna Ansuna</h5>
-              <p class="card-text">Merging music and conservation in Central PA</p>
-              <div class="mt-auto"><a href="https://www.sunaansuna.com/" class="btn btn-primary">Website</a></div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">The Groove Room</h5>
-              <p class="card-text">One-day community-oriented music writing hacks</p>
-              <div class="mt-auto">
-                <a href="https://grooveroom.weebly.com/" class="btn btn-primary">Website</a>
-                <a href="https://grooveroom.bandcamp.com/" class="btn btn-primary">Listen</a>
-              </div>
-            </div>
-          </div> -->
-        </div>
-
-        <a class="anchor" id="music"></a>
-        <h5 class="m-3">Music</h5>
-
-        <div class="row col-md-12">
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Tales of the Tender Cactus</h5>
-              <p class="card-text">Whale Jazz and Barnackle Funk from The Deep Casual</p>
-              <div class="mt-auto"><a
-                  href="https://open.spotify.com/album/26OEGa2JgkcS52iO6R38A3?si=WOW61BN0RPOtBlbrXiaChA"
-                  class="btn btn-primary">Listen</a></div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Turned On Neurons</h5>
-              <p class="card-text">Funky grooves from a home-made studio album by Doppler Poppins</p>
-              <div class="mt-auto"><a
-                  href="https://distrokid.com/hyperfollow/dopplerpoppins/turned-on-neurons-2?fbclid=IwAR1fPFoeT1JjVQwY97-5pfqJKtE1UA4DwuEzZM94vzLyFdWpsaGlwOH2wT8"
-                  class="btn btn-primary">Listen</a></div>
-            </div>
-          </div>
-
-          <div class="card col-md-5 col-lg-4  m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Ballade No. 1</h5>
-              <p class="card-text">Chopin's piano masterpiece, performed and recorded by yours truly</p>
-              <div class="mt-auto"><a href="https://www.youtube.com/watch?v=yqsPrylh0ec"
-                  class="btn btn-primary mt-auto">Watch</a></div>
-            </div>
-          </div>
-
-          <!-- <div class="card col-md-5 col-lg-4 m-2">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">aiDEN</h5>
-              <p class="card-text">A song contemplating artificial intelligence from the Groove Room</p>
-              <div class="mt-auto"><a href="https://grooveroom.bandcamp.com/album/aiden"
-                  class="btn btn-primary mt-auto">Listen</a></div>
-            </div>
-          </div> -->
-        </div>
-
-        <a class="anchor" id="resumes"></a>
-        <h5 class="m-3">CV</h5>
-
-        <div class="row col-md-12">
-          <div class="m-2">
-            <a href="https://drive.google.com/file/d/1vbxhxvoV88ig_N-vA1uSNTus9Nh47s2k/view?usp=sharing"
-              class="btn btn-primary mt-auto">Professional CV</a>
-          </div>
-
-        </div>
-
-        <a class="anchor" id="contact"></a>
-        <h5 class="m-3"> Contact </h5>
-
-        <div class="col-md-12 m-2">
-          <script language="JavaScript">
-            var username = "sam.lapp";
-            var hostname = "colorado.edu";
-            var linktext = username + "@" + hostname;
-            document.write("<a class='myLink'" + " href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
-          </script>
-        </div>
-
-        <!-- <a class="anchor" id="photos"></a> -->
-        <!-- <h5 class="m-3">Photos</h5> -->
-
+    <div class="contact">
+      <a class="mail email" data-u="sam.lapp" data-h="colorado.edu" href="#"><noscript>sam.lapp [at] colorado.edu</noscript></a>
+      <div class="links">
+        <a href="https://drive.google.com/file/d/1vbxhxvoV88ig_N-vA1uSNTus9Nh47s2k/view?usp=sharing">CV</a>
+        <a href="https://scholar.google.com/citations?user=X5ubHcoAAAAJ&hl=en">Scholar</a>
+        <a href="https://github.com/sammlapp">GitHub</a>
+        <a href="https://orcid.org/0000-0003-1637-6822">ORCID</a>
       </div>
-
+      <div class="with">With <a href="https://estherrolf.com/">Esther Rolf</a> (CU Boulder) &amp; <a href="https://beerylab.csail.mit.edu">Sara Beery</a> (MIT)</div>
     </div>
 
+    <div class="photo-ctl"><div class="dots" id="dots" role="group" aria-label="Background photos"></div><span id="cap" aria-live="polite"></span></div>
+  </header>
 
-  </div>
+  <!-- RIGHT two-thirds: scrolls over the fixed background -->
+  <main class="content" id="scroller" tabindex="-1">
+    <div class="col">
+      <nav class="tabs" aria-label="Sections">
+        <a class="tab on" href="#featured">Featured</a>
+        <a class="tab" href="#pubs">Selected Pubs</a>
+        <a class="tab" href="#software">Software</a>
+        <a class="tab" href="#listen">Listen In</a>
+      </nav>
 
+      <section id="featured">
+        <div class="sh">Featured</div>
+        <article class="card feat">
+          <img src="asset/img/ovenbird.webp" alt="An ovenbird" width="1616" height="1212">
+          <div class="pad">
+            <span class="badge">Nature Methods</span>
+            <h3>Recognizing individual birds by their songs</h3>
+            <p>Automated individual recognition enables "acoustic recapture" from passive acoustic monitoring data, so individual birds can be re-identified across years from recordings alone.</p>
+            <div class="links">
+              <a href="https://rdcu.be/17eYRjErmKSa">Paper</a>
+              <a href="https://github.com/sammlapp/ovenbird-individual-recognition">Code</a>
+              <a href="https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=2049&revision=1">Data</a>
+              <a href="https://ovenbird-id.streamlit.app/">Interactive app</a>
+              <a href="https://www.science.org/content/article/ai-can-track-single-bird-over-time-based-solely-its-song">Science</a>
+              <a href="https://www.audubon.org/magazine/these-5-research-projects-show-how-ai-revolutionizing-bird-conservation">Audubon</a>
+              <a href="https://medium.com/@divineanakor/an-ai-learned-to-tell-individual-birds-apart-by-song-alone-b3d9cf8a208a">Medium</a>
+            </div>
+          </div>
+        </article>
+        <div class="two">
+          <article class="card">
+            <img src="asset/img/dipper.png" alt="Screenshot of the Dipper app" loading="lazy">
+            <div class="pad"><h4>Dipper</h4><p>Passive acoustic monitoring, end to end, in a desktop app.</p><div class="links"><a href="https://sammlapp.github.io/dipper">Website</a></div></div>
+          </article>
+          <article class="card">
+            <img src="asset/img/lidar-sm.jpg" alt="Airborne LiDAR point cloud" loading="lazy">
+            <div class="pad"><h4>Aerial LiDAR</h4><p>Machine learning models that interpret 3D habitat structure.</p></div>
+          </article>
+        </div>
+      </section>
 
-  <div class="image-container">
-    <img class="image" src="asset/img/scarlet_rumped_cacique.jpg" alt="Blackburnian Warbler">
-  </div>
+      <section id="pubs">
+        <div class="sh">Selected Pubs</div>
+        <div class="card">
+          <div class="pub"><span class="y">2026</span><div><b>Automated identification of individual birds by song enables multi-year recapture from passive acoustic monitoring data</b><div class="j">Nature Methods</div><div class="links"><a href="https://rdcu.be/17eYRjErmKSa">Paper</a><a href="https://github.com/sammlapp/ovenbird-individual-recognition">Code</a><a href="https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=2049&revision=1">Data</a><a href="https://ovenbird-id.streamlit.app/">Interactive app</a></div></div></div>
+          <div class="pub"><span class="y">2024</span><div><b>Aquatic Soundscape Recordings Reveal Diverse Vocalizations and Nocturnal Activity of an Endangered Frog</b><div class="j">The American Naturalist</div><div class="links"><a href="https://www.journals.uchicago.edu/doi/full/10.1086/729422">Paper</a></div></div></div>
+          <div class="pub"><span class="y">2023</span><div><b>OpenSoundscape: An open-source bioacoustics analysis package for Python</b><div class="j">Methods in Ecology and Evolution</div><div class="links"><a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14196">Paper</a><a href="https://opensoundscape.org">Docs</a><a href="https://github.com/kitzeslab/opensoundscape">Code</a></div></div></div>
+          <div class="pub"><span class="y">2023</span><div><b>A Quantitative Evaluation of the Performance of the Low-Cost AudioMoth Acoustic Recording Unit</b><div class="j">Sensors</div><div class="links"><a href="https://www.mdpi.com/1424-8220/23/11/5254">Paper</a><a href="https://github.com/kitzeslab/audiomoth-performance/blob/main/report.md">Whitepaper</a></div></div></div>
+          <div class="pub"><span class="y">2022</span><div><b>Automated recognition of ruffed grouse drumming in field recordings</b><div class="j">Wildlife Society Bulletin</div><div class="links"><a href="https://wildlife.onlinelibrary.wiley.com/doi/10.1002/wsb.1395">Paper</a><a href="https://github.com/kitzeslab/ruffed_grouse_manuscript_2022">Code</a></div></div></div>
+          <div class="pub"><span class="y">2021</span><div><b>Automated detection of frog calls and choruses by pulse repetition rate</b><div class="j">Conservation Biology</div><div class="links"><a href="https://doi.org/10.1111/cobi.13718">Paper</a><a href="https://f1000research.com/posters/9-964">Poster</a><a href="https://github.com/kitzeslab/ribbit_manuscript_notebooks">Code (Python)</a><a href="https://github.com/kitzeslab/r-ribbit">R implementation</a></div></div></div>
+        </div>
+      </section>
 
+      <section id="software">
+        <div class="sh">Software</div>
+        <div class="card">
+          <div class="row"><div><h4>Dipper</h4><small>Open-source desktop app for passive acoustic monitoring workflows</small></div><div class="links"><a href="https://sammlapp.github.io/dipper/">Docs</a><a href="https://github.com/sammlapp/dipper">Code</a></div></div>
+          <div class="row"><div><h4>OpenSoundscape</h4><small>Open-source Python package for bioacoustic analysis</small></div><div class="links"><a href="https://opensoundscape.org">Docs</a><a href="https://github.com/kitzeslab/opensoundscape">Code</a></div></div>
+          <div class="row"><div><h4>Bioacoustics Model Zoo</h4><small>A unified API for bioacoustic foundation models</small></div><div class="links"><a href="https://github.com/kitzeslab/bioacoustics-model-zoo">Code</a></div></div>
+          <div class="row"><div><h4>Ovenbird Song ID</h4><small>Explore song variation across individual ovenbirds</small></div><a class="go" href="https://ovenbird-id.streamlit.app/">Open</a></div>
+          <div class="row"><div><h4>Acoustic Distance</h4><small>How source volume, attenuation, and background noise set acoustic detection spaces</small></div><a class="go" href="https://bird-distance.streamlit.app/">Open</a></div>
+        </div>
+      </section>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+      <section id="listen">
+        <div class="sh">Listen In</div>
+        <div class="card">
+          <div class="row"><div><h4>Tales of the Tender Cactus</h4><small>Whale jazz and barnacle funk · The Deep Casual</small></div><a class="go" href="https://open.spotify.com/album/26OEGa2JgkcS52iO6R38A3?si=WOW61BN0RPOtBlbrXiaChA">Listen</a></div>
+          <div class="row"><div><h4>Turned On Neurons</h4><small>Funky grooves from a home-made studio album · Doppler Poppins</small></div><a class="go" href="https://distrokid.com/hyperfollow/dopplerpoppins/turned-on-neurons-2">Listen</a></div>
+          <div class="row"><div><h4>Ballade No. 1</h4><small>Chopin's piano masterpiece, performed and recorded by me</small></div><a class="go" href="https://www.youtube.com/watch?v=yqsPrylh0ec">Watch</a></div>
+        </div>
+        <!-- <p class="foot">Outside of work I spend my time making music, exploring the outdoors, and building community through shared experiences of learning and creative expression.</p> -->
+      </section>
+    </div>
+  </main>
 
+</div>
 
-
+<script src="asset/js/site.js"></script>
 </body>
-
-
-
 </html>
