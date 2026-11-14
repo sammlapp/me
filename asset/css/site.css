@@ -126,7 +126,8 @@ section { padding: 26px 0 8px; scroll-margin-top: 80px; }
 .row { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 15px 20px; border-top: 1px solid var(--glass-line); }
 .row:first-child { border-top: 0; }
 .row small { color: var(--soft); display: block; font-size: .82rem; }
-.row .go { font: 600 .78rem Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+.row > .links, .row > .go { flex-shrink: 0; flex-wrap: nowrap; }
+.row .go { font-size: .86rem; font-weight: 500; white-space: nowrap; }
 .foot { padding: 26px 0 0; color: var(--soft); font-size: .84rem; }
 
 /* ---- narrow screens: stack, and let the page scroll normally ---- */
