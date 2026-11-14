@@ -1,0 +1,4 @@
+# full-size photo originals; the site uses the web-sized copies in asset/img/bg/
+asset/img/photos/
+
+.DS_Store
