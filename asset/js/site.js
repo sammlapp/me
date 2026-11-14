@@ -11,12 +11,25 @@ const tabs = [...document.querySelectorAll('.tab')];
 const secs = tabs.map(t => document.querySelector(t.getAttribute('href')));
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+function scrollable() { return sc.scrollHeight > sc.clientHeight + 1; }
+
 function spy() {
-  const mid = sc.getBoundingClientRect().top + 140;
+  // wide layout: the column scrolls itself; narrow layout: the whole page scrolls
+  const inner = scrollable();
+  const mid = (inner ? sc.getBoundingClientRect().top : 0) + 140;
   let cur = 0;
   secs.forEach((s, i) => { if (s.getBoundingClientRect().top <= mid) cur = i; });
-  if (sc.scrollTop + sc.clientHeight >= sc.scrollHeight - 4) cur = secs.length - 1;
+  const atEnd = inner
+    ? sc.scrollTop + sc.clientHeight >= sc.scrollHeight - 4
+    : innerHeight + scrollY >= document.documentElement.scrollHeight - 4;
+  if (atEnd) cur = secs.length - 1;
   tabs.forEach((t, i) => t.classList.toggle('on', i === cur));
+  // on phones the tab row scrolls sideways: keep the active tab in view
+  const bar = tabs[cur].parentElement;
+  if (bar.scrollWidth > bar.clientWidth) {
+    const t = tabs[cur];
+    bar.scrollTo({ left: t.offsetLeft - (bar.clientWidth - t.offsetWidth) / 2, behavior: reduce ? 'auto' : 'smooth' });
+  }
 }
 sc.addEventListener('scroll', spy, { passive: true });
 addEventListener('scroll', spy, { passive: true }); // narrow layout scrolls the window
@@ -27,7 +40,6 @@ tabs.forEach((t, i) => t.addEventListener('click', e => {
 spy();
 
 // ---- wheel / keys anywhere on the page scroll the content column ----
-function scrollable() { return sc.scrollHeight > sc.clientHeight + 1; }
 addEventListener('wheel', e => {
   if (sc.contains(e.target) || !scrollable()) return;
   const unit = e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? sc.clientHeight : 1;
