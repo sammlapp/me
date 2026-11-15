@@ -59,16 +59,16 @@ addEventListener('keydown', e => {
 // ---- background photo cycle: two layers crossfade ----
 // pos: where the subject sits in frame; dim: extra brightness multiplier for very bright photos
 const PHOTOS = [
-  { src: 'asset/img/bg/elepaio.jpg',                pos: '50% 50%', cap: 'Hawaiʻi ʻelepaio' },
+  { src: 'asset/img/bg/elepaio.jpg',                pos: '50% 50%', cap: 'Kauaʻi ʻElepaio' },
   { src: 'asset/img/bg/chestnut-sided-warbler.jpg', pos: '55% 50%', cap: 'Chestnut-sided Warbler' },
   { src: 'asset/img/bg/scarlet-rumped-cacique.jpg', pos: '55% 50%', cap: 'Scarlet-rumped Cacique' },
   { src: 'asset/img/bg/anianiau.jpg',               pos: '35% 50%', cap: 'ʻAnianiau' },
   { src: 'asset/img/bg/streaked-flycatcher.jpg',    pos: '60% 50%', cap: 'Streaked Flycatcher' },
-  { src: 'asset/img/bg/frog.jpg',                   pos: '60% 50%', cap: '' },
-  { src: 'asset/img/bg/glass-frog.jpg',             pos: '50% 50%', cap: '', dim: .8 },
-  { src: 'asset/img/bg/sierra-lake.jpg',            pos: '50% 50%', cap: '', dim: .7 },
+  { src: 'asset/img/bg/frog.jpg',                   pos: '60% 50%', cap: 'Hypsiboas rosenbergi' },
+  { src: 'asset/img/bg/glass-frog.jpg',             pos: '50% 50%', cap: 'Esperadana Prosoblepon', dim: .8 },
+  { src: 'asset/img/bg/sierra-lake.jpg',            pos: '50% 50%', cap: 'High Sierra', dim: .7 },
 ];
-const INTERVAL = 9000;
+const INTERVAL = 12000;
 const layers = [...document.querySelectorAll('.bg .layer')];
 const dotsEl = document.getElementById('dots');
 const capEl = document.getElementById('cap');
